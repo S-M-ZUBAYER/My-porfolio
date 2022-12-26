@@ -2,9 +2,9 @@ import React from "react";
 import cricketLover from "../assets/portfolio/cricketLover.png";
 import kidspace from "../assets/portfolio/kidspace.png";
 import studyZone from "../assets/portfolio/studyZone.png";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+// import reactParallax from "../assets/portfolio/reactParallax.jpg";
+// import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+// import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Portfolio = () => {
@@ -18,33 +18,33 @@ const Portfolio = () => {
   const handleToStudyZone = () => {
     navigate('/studyZone')
   }
-  const portfolios = [
-    {
-      id: 1,
-      src: cricketLover,
-      title: 'Cricket Lover',
-      description: "A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price..."
-    },
-    {
-      id: 2,
-      src: kidspace,
-      title: 'KidSpace',
-      description: "A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price..."
+  // const portfolios = [
+  //   {
+  //     id: 1,
+  //     src: cricketLover,
+  //     title: 'Cricket Lover',
+  //     description: "A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price..."
+  //   },
+  //   {
+  //     id: 2,
+  //     src: kidspace,
+  //     title: 'KidSpace',
+  //     description: "A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price..."
 
-    },
-    {
-      id: 3,
-      src: studyZone,
-      title: 'StudyZone',
-      description: "A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price..."
+  //   },
+  //   {
+  //     id: 3,
+  //     src: studyZone,
+  //     title: 'StudyZone',
+  //     description: "A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price..."
 
-    }
-  ];
+  //   }
+  // ];
 
 
   return (
     <div
-      name="portfolio"
+      name="projects"
       className="bg-gradient-to-r from-black via-slate-800 to-gray-900 w-full text-white md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">

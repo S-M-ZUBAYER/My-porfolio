@@ -44,8 +44,8 @@ const Portfolio = () => {
 
   return (
     <div
-      name="projects"
-      className="bg-gradient-to-r from-black via-slate-800 to-gray-900 w-full text-white md:h-screen"
+      name="Portfolio"
+      className=" bg-gradient-to-r from-black via-blue-900 to-black w-full text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">

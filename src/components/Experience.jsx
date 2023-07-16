@@ -9,6 +9,14 @@ import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import MongoDB from "../assets/mongoDB.png";
+import strip from "../assets/strip.png";
+import jwt from "../assets/jwt.png";
+import nodejs from "../assets/node.png";
+import redux from "../assets/redux.png";
+import bootstrap from "../assets/bootstrap.png";
+import express from "../assets/express.png";
+import firebase from "../assets/firebase.png";
+import openai from "../assets/openai.jpeg";
 
 
 const Experience = () => {
@@ -35,7 +43,7 @@ const Experience = () => {
       id: 4,
       src: reactImage,
       title: "React JS",
-      style: "shadow-blue-600",
+      style: "shadow-green-600",
     },
     {
       id: 5,
@@ -45,24 +53,66 @@ const Experience = () => {
     },
     {
       id: 6,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-blue-400",
+    },
+    {
+      id: 7,
       src: nextjs,
       title: "Next JS",
       style: "shadow-white",
     },
     {
-      id: 7,
-      src: graphql,
-      title: "Express JS",
-      style: "shadow-pink-400",
+      id: 8,
+      src: redux,
+      title: "Redux",
+      style: "shadow-purple-400",
     },
     {
       id: 8,
+      src: openai,
+      title: "Open AI",
+      style: "shadow-purple-400",
+    },
+    {
+      id: 9,
+      src: nodejs,
+      title: "Node JS",
+      style: "shadow-green-400",
+    },
+    {
+      id: 10,
+      src: express,
+      title: "Express JS",
+      style: "shadow-white",
+    },
+    {
+      id: 11,
+      src: firebase,
+      title: "firebase",
+      style: "shadow-yellow-400",
+    },
+    {
+      id: 12,
+      src: jwt,
+      title: "JWT Token",
+      style: "shadow-pink-400",
+    },
+    {
+      id: 13,
+      src: strip,
+      title: "Strip Payment",
+      style: "shadow-blue-400",
+    },
+    {
+      id: 14,
       src: MongoDB,
       title: "MongoDB",
       style: "shadow-gray-400",
     },
     {
-      id: 8,
+      id: 15,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
@@ -72,7 +122,7 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-r from-black via-slate-800 to-gray-900 w-full h-screen pt-48"
+      className=" bg-gradient-to-r from-black via-blue-900 to-black w-full  pt-48"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>

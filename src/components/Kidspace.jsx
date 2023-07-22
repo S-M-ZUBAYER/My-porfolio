@@ -1,36 +1,35 @@
 import React from 'react';
-import img1 from "../assets/portfolio/cricket-1.png"
-import img2 from "../assets/portfolio/cricket-2.png"
-import img3 from "../assets/portfolio/cricket-3.png"
+import img1 from "../assets/kidspace/home.png"
+import img2 from "../assets/kidspace/Details.png"
+import img3 from "../assets/kidspace/review.png"
 const Kidspace = () => {
     return (
         <div className="w-full py-24 sm:px-5 md:px-48   bg-gradient-to-r from-black via-blue-900 to-black text-white">
             <h2 className="text-white font-semibold text-3xl">
                 Overview:
             </h2>
-            <p className="my-5">A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price...
+            <p className="my-5">In this website any one can find the specific time and activities for their child. This is one kind of day care service center website...
             </p>
             <h2 className="text-white font-semibold text-3xl">
                 Key Features:
                 <p className="text-base font-medium">
 
-                    <br />1.In this website All cricket instruments seller can easily sell their products.
-                    <br />2.In this website All crazy cricket lover can easily buy their products.
-                    <br />3.Seller can easily add their products and advertise their new collection in home page.
-                    <br />4.Buyer can easily chose any product and buy their necessary products.
-                    <br />5.Admin can monitoring this site , he has the ability to verify the seller and able delete the seller and buyer account.
+                    <br />1.In this website any one can find the specific time and activities for their child..
+                    <br />2.That will be helpful for different kinds of parents.
+                    <br />3.Specially which parents generally busy with their job or other activities in maximum day.
+                    <br />4. any one can easily fixed their time and activities which is needed for their child.
                     <br />6.This ia a single page application.
-                    <br />7. I use HTML,CSS,Tailwind,some CSS components, JavaScript, React js, Node js, MondgoDB, stripe for payment etc.
+                    <br />7. I use HTML,CSS,Tailwind,some CSS components, JavaScript, React js, Node js, MongoDB etc.
 
                 </p>
             </h2>
             {/* <p className="my-5">jlajlfdsjadljlsajsdfkj</p> */}
-            <h2 className="text-white font-semibold text-3xl">
+            <h2 className="text-white font-semibold text-3xl mt-5 mb-2">
                 Link:
             </h2>
-            <p className="my-5">Live Site: <span>https://cricket-lover-52a96.web.app/</span></p>
-            <p className="my-5">GitHub Client Site: <span>https://github.com/S-M-ZUBAYER/Cricket-Lover-client-site</span></p>
-            <p className="my-5">GitHub Server Site: <span>https://github.com/S-M-ZUBAYER/Cricket-Lover-server-site</span></p>
+            <p className="my-5">Live Site: <span>https://kidspace-3636d.web.app/</span></p>
+            <p className="my-5">GitHub Client Site: <span>https://github.com/S-M-ZUBAYER/Kidspace-day-care-</span></p>
+            <p className="my-5">GitHub Server Site: <span>https://github.com/S-M-ZUBAYER/kidspace-day-care-server-site</span></p>
             <h2 className="text-white font-semibold text-3xl">
                 Gallery:
             </h2>

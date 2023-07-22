@@ -1,39 +1,37 @@
 import React from 'react';
-import img1 from "../assets/portfolio/cricket-1.png"
-import img2 from "../assets/portfolio/cricket-2.png"
-import img3 from "../assets/portfolio/cricket-3.png"
+import img1 from "../assets/StudyZone/Header.png"
+import img2 from "../assets/StudyZone/Details.png"
+import img3 from "../assets/StudyZone/Checkout.png"
 const StudyZone = () => {
     return (
         <div className="w-full py-24 sm:px-5 md:px-48   bg-gradient-to-r from-black via-blue-900 to-black text-white">
             <h2 className="text-white font-semibold text-3xl">
                 Overview:
             </h2>
-            <p className="my-5">A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price...
+            <p className="my-5">This site will help the students to gather knowledge about modern technology. Any one can buy any course about modern technology. And learn on this particular technology...
             </p>
             <h2 className="text-white font-semibold text-3xl">
                 Key Features:
                 <p className="text-base font-medium">
 
-                    <br />1.In this website All cricket instruments seller can easily sell their products.
-                    <br />2.In this website All crazy cricket lover can easily buy their products.
-                    <br />3.Seller can easily add their products and advertise their new collection in home page.
-                    <br />4.Buyer can easily chose any product and buy their necessary products.
-                    <br />5.Admin can monitoring this site , he has the ability to verify the seller and able delete the seller and buyer account.
-                    <br />6.This ia a single page application.
-                    <br />7. I use HTML,CSS,Tailwind,some CSS components, JavaScript, React js, Node js, MondgoDB, stripe for payment etc.
+                    <br />1.In this website any one can purchase their different kinds of courses.
+                    <br />2.That will be helpful for different ages people gather their knowledge from online platform easily.
+                    <br />3.Any one can justify you level to ans this particulars quizzes.
+                    <br />4.This is single page application. To build this site i use react js for make user interface..
+                    <br />5. Also i use Node.js to make API. And i use firebase to create authentication for this site.
 
                 </p>
             </h2>
-            <h2 className="text-white font-semibold text-3xl">
+            <h2 className="text-white font-semibold text-3xl mt-5 mb-2">
                 Technologies:
             </h2>
-            {/* <p className="my-5 text-base font-medium">jlajlfdsjadljlsajsdfkj</p> */}
-            <h2 className="text-white font-semibold text-3xl">
+            <p> HTML,CSS,Tailwind,some CSS components, JavaScript, React js,Firebase, Node js, MongoDB and so on.</p>
+            <h2 className="text-white font-semibold text-3xl mt-5 mb-2">
                 Link:
             </h2>
-            <p className="my-5">Live Site: <span>https://cricket-lover-52a96.web.app/</span></p>
-            <p className="my-5">GitHub Client Site: <span>https://github.com/S-M-ZUBAYER/Cricket-Lover-client-site</span></p>
-            <p className="my-5">GitHub Server Site: <span>https://github.com/S-M-ZUBAYER/Cricket-Lover-server-site</span></p>
+            <p className="my-5">Live Site: <span>https://study-zone-platform.web.app/</span></p>
+            <p className="my-5">GitHub Client Site: <span>https://github.com/S-M-ZUBAYER/Study-Zone-Client-Site</span></p>
+            <p className="my-5">GitHub Server Site: <span>https://github.com/S-M-ZUBAYER/Study-Zone-Server-Site</span></p>
             <h2 className="text-white font-semibold text-3xl">
                 Gallery:
             </h2>

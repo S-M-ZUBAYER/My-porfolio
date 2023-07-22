@@ -12,12 +12,12 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-around h-full  md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-5xl sm:mt-12 font-bold text-white">
-            I'm <span className="bg-gradient-to-r from-yellow-300 to-green-500 text-transparent bg-clip-text">S M ZUBAYER</span><br /> <span className="text-2xl sm:text-4xl">a Front-End Developer</span>
+            I'm <span className="bg-gradient-to-r from-yellow-300 to-green-500 text-transparent bg-clip-text">S M ZUBAYER</span><br /> <span className="text-2xl sm:text-4xl">a Full Stack Developer</span>
           </h2>
           <p className="text-white py-4 max-w-md">
             TO be a high skill programmer I have spent three
             and a half years in this sector and at the same time, last one year try to focus to
-            be a front end developer. Seeking a role as a front-end developer so I can use
+            be a backend developer. Seeking a role as a full stack developer so I can use
             my thorough knowledge of programming frameworks and development.
           </p>
 

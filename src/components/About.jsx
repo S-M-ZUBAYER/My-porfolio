@@ -15,14 +15,14 @@ const About = () => {
 
         <p className="text-xl mt-12">
           This is S M ZUBAYER. TO be a high skill programmer I have spent four
-          years to complete my graduation from Hubei University of Technology, Wuhan, Hubei, PR China.And at the same time, last one year try to focus to
-          be a front end developer.
+          years to complete my graduation from Hubei University of Technology, Wuhan, Hubei, PR China.And at the same time i have focus to be a good web developer, last one year try to focus to
+          be a backend developer.
         </p>
 
         <br />
 
         <p className="text-xl">
-          As a passionate and dedicated front-end developer with a strong foundation in web development technologies, I am eager to leverage my skills and knowledge to deliver high-quality and efficient software solutions. With my strong understanding of HTML, CSS, JavaScript, React, Node.js, and MongoDB, as well as my experience in developing and deploying web applications, I am confident in my ability to contribute to the success of any organization. I am also a quick learner with excellent communication and problem-solving skills, and I am always looking for opportunities to grow and improve as a developer.
+          As a passionate and dedicated full stack developer with a strong foundation in web development technologies, I am eager to leverage my skills and knowledge to deliver high-quality and efficient software solutions. With my strong understanding of HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, React, Redux, Node.js, Express JS, OpenAI and MongoDB, as well as my experience in developing and deploying web applications, I am confident in my ability to contribute to the success of any organization. I am also a quick learner with excellent communication and problem-solving skills, and I am always looking for opportunities to grow and improve as a developer.
         </p>
       </div>
     </div>

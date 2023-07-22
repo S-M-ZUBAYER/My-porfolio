@@ -15,10 +15,10 @@ const NavBar = () => {
   }
 
   const links = [
-    {
-      id: 1,
-      link: "home",
-    },
+    // {
+    //   id: 1,
+    //   link: "home",
+    // },
     {
       id: 2,
       link: "about",
@@ -45,6 +45,14 @@ const NavBar = () => {
       </div>
 
       <ul className="hidden md:flex">
+        <li
+
+          className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200"
+        >
+          <Link onClick={handleToHome} to="/" smooth duration={500}>
+            Home
+          </Link>
+        </li>
         {links.map(({ id, link }) => (
           <li
             key={id}

@@ -12,6 +12,7 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import StudyZone from "./components/StudyZone";
+import THT_Space from "./components/THT-Space";
 
 function App() {
   const routes = createBrowserRouter([
@@ -43,6 +44,10 @@ function App() {
         {
           path: '/studyZone',
           element: <StudyZone></StudyZone>
+        },
+        {
+          path: '/THT-Space',
+          element: <THT_Space></THT_Space>
         },
       ]
     }

@@ -1,6 +1,7 @@
 import React from "react";
 import cricketLover from "../assets/portfolio/cricketLover.png";
 import tht from "../assets/portfolio/tht.png";
+import grozziie from "../assets/Grozziee/Dashboard.jpg";
 import school from "../assets/portfolio/school.png";
 import kidspace from "../assets/portfolio/kidspace.png";
 import studyZone from "../assets/portfolio/studyZone.png";
@@ -8,6 +9,8 @@ import studyZone from "../assets/portfolio/studyZone.png";
 // import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 // import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import { useNavigate } from "react-router-dom";
+import OpenAIProjects from "./OpenAIProjects";
+import OtherProjects from "./OtherProjects";
 
 const Portfolio = () => {
   const navigate = useNavigate()
@@ -17,8 +20,11 @@ const Portfolio = () => {
   const handleToCustomerService = () => {
     navigate('/THT-Space')
   }
+  const handleToGrozziieApp = () => {
+    navigate('/GrozzieeApp')
+  }
   const handleToSchoolManagement = () => {
-    navigate('/schoolManagement')
+    navigate('/school_management')
   }
 
   const handleToKidspace = () => {
@@ -58,13 +64,14 @@ const Portfolio = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
+
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Projects
+            Key Projects
           </p>
-          <p className="py-6">Check out some of my projects right here</p>
+          <p className="py-6">Check out some of my key projects right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid z-0 sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           <div className=" relative shadow-md shadow-gray-600 rounded-lg">
             <img
               src={tht}
@@ -83,6 +90,52 @@ const Portfolio = () => {
               </small>
             </div>
             <button onClick={handleToCustomerService} className=" absolute bottom-0 text-center mx-auto w-full bg-gradient-to-t from-green-300 via-orange-400 to-yellow-300 rounded-b-md py-1 text-black font-semibold">
+              Details
+            </button>
+          </div>
+
+          <div className=" relative shadow-md shadow-gray-600 rounded-lg">
+            <img
+              src={grozziie}
+              alt=""
+              className="rounded-md rounded-b-none duration-200 hover:scale-105 h-36 w-full"
+            />
+            <div>
+              <h3 className="text-lg font-semibold pl-4 pt-1">
+                Grozziie APP
+              </h3>
+            </div>
+            <div className="flex items-center justify-center">
+
+              <small className="p-4">
+                A platform is designed to cater to the needs of customers utilizing printers from THT-Space Electrical Company Ltd. Through this application....
+              </small>
+            </div>
+            <button onClick={handleToGrozziieApp} className=" absolute bottom-0 text-center mx-auto w-full bg-gradient-to-t from-green-300 via-orange-400 to-yellow-300 rounded-b-md py-1 text-black font-semibold">
+              Details
+            </button>
+          </div>
+
+
+
+          <div className=" relative shadow-md shadow-gray-600 rounded-lg">
+            <img
+              src={school}
+              alt=""
+              className="rounded-md rounded-b-none duration-200 hover:scale-105"
+            />
+            <div>
+              <h3 className="text-xl font-bold pl-4 pt-1">
+                Zuss School Management System
+              </h3>
+            </div>
+            <div className="flex items-center justify-center">
+
+              <small className="p-4">
+                A dynamic website to crate new unique for a school from this website. Admin can collect information from a school to create their dynamic site...
+              </small>
+            </div>
+            <button onClick={handleToSchoolManagement} className=" absolute bottom-0 text-center mx-auto w-full bg-gradient-to-t from-green-300 via-orange-400 to-yellow-300 rounded-b-md py-1 text-black font-semibold">
               Details
             </button>
           </div>
@@ -109,28 +162,8 @@ const Portfolio = () => {
             </button>
           </div>
 
-          <div className=" relative shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={school}
-              alt=""
-              className="rounded-md rounded-b-none duration-200 hover:scale-105"
-            />
-            <div>
-              <h3 className="text-xl font-bold pl-4 pt-1">
-                Zuss School Management System
-              </h3>
-            </div>
-            <div className="flex items-center justify-center">
 
-              <small className="p-4">
-                A dynamic website to crate new unique for a school from this website. Admin can collect information from a school to create their dynamic site...
-              </small>
-            </div>
-            <button onClick={handleToCricketLover} className=" absolute bottom-0 text-center mx-auto w-full bg-gradient-to-t from-green-300 via-orange-400 to-yellow-300 rounded-b-md py-1 text-black font-semibold">
-              Details
-            </button>
-          </div>
-          <div className=" relative shadow-md shadow-gray-600 rounded-lg">
+          {/* <div className=" relative shadow-md shadow-gray-600 rounded-lg">
             <img
               src={kidspace}
               alt=""
@@ -151,6 +184,9 @@ const Portfolio = () => {
               Details
             </button>
           </div>
+
+
+
           <div className=" relative shadow-md shadow-gray-600 rounded-lg">
             <img
               src={studyZone}
@@ -171,11 +207,14 @@ const Portfolio = () => {
             <button onClick={handleToStudyZone} className=" absolute bottom-0 text-center mx-auto w-full bg-gradient-to-t from-green-300 via-orange-400 to-yellow-300 rounded-b-md py-1 text-black font-semibold">
               Details
             </button>
-          </div>
+          </div> */}
         </div>
 
 
       </div>
+
+      <OpenAIProjects></OpenAIProjects>
+      {/* <OtherProjects></OtherProjects> */}
     </div>
   );
 };

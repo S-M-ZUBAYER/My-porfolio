@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
+import HeroImage from "../assets/heroImage.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
@@ -15,10 +15,7 @@ const Home = () => {
             I'm <span className="bg-gradient-to-r from-yellow-300 to-green-500 text-transparent bg-clip-text">S M ZUBAYER</span><br /> <span className="text-2xl sm:text-4xl">a Full Stack Developer</span>
           </h2>
           <p className="text-white py-4 max-w-md">
-            TO be a high skill programmer I have spent three
-            and a half years in this sector and at the same time, last one year try to focus to
-            be a backend developer. Seeking a role as a full stack developer so I can use
-            my thorough knowledge of programming frameworks and development.
+            With an unwavering commitment to honing my programming skills, I've dedicated one and a half years to dynamic web development. Over the past year, I strategically focused on becoming a proficient Full Stack Developer. Currently employed at THT-Space Electrical Company Ltd., I've applied and enhanced my skills in a real-world setting. Eager to leverage this experience in a new professional chapter, I aim to contribute to and thrive within a dynamic and forward-thinking organization. Excited for the challenges and growth ahead.
           </p>
 
           <div>

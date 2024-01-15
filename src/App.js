@@ -13,6 +13,8 @@ import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import StudyZone from "./components/StudyZone";
 import THT_Space from "./components/THT-Space";
+import SchoolManagement from "./components/SchoolManagement";
+import GrozzieeApp from "./components/GrozzieeApp";
 
 function App() {
   const routes = createBrowserRouter([
@@ -48,6 +50,14 @@ function App() {
         {
           path: '/THT-Space',
           element: <THT_Space></THT_Space>
+        },
+        {
+          path: '/GrozzieeApp',
+          element: <GrozzieeApp></GrozzieeApp>
+        },
+        {
+          path: '/school_management',
+          element: <SchoolManagement></SchoolManagement>
         },
       ]
     }

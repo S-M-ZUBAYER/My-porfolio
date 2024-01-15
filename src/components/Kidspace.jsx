@@ -3,8 +3,22 @@ import img1 from "../assets/kidspace/home.png"
 import img2 from "../assets/kidspace/Details.png"
 import img3 from "../assets/kidspace/review.png"
 const Kidspace = () => {
+
+
+
+
+    const handleToLiveLink = (link) => {
+        window.open(link, '_blank');
+    };
     return (
         <div className="w-full py-24 sm:px-5 md:px-48   bg-gradient-to-r from-black via-blue-900 to-black text-white">
+            <h1 className="text-3xl underline text-center mb-10 font-bold" style={{
+                background: 'linear-gradient(90deg, #00FF00, #FFFF00)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+            }}>
+                KidSpace
+            </h1>
             <h2 className="text-white font-semibold text-3xl">
                 Overview:
             </h2>
@@ -27,9 +41,19 @@ const Kidspace = () => {
             <h2 className="text-white font-semibold text-3xl mt-5 mb-2">
                 Link:
             </h2>
-            <p className="my-5">Live Site: <span>https://kidspace-3636d.web.app/</span></p>
-            <p className="my-5">GitHub Client Site: <span>https://github.com/S-M-ZUBAYER/Kidspace-day-care-</span></p>
-            <p className="my-5">GitHub Server Site: <span>https://github.com/S-M-ZUBAYER/kidspace-day-care-server-site</span></p>
+            <button className="flex" onClick={() => handleToLiveLink("https://kidspace-3636d.web.app/")}>
+                <p className="my-3 text-blue-600 font-bold text-lg">Live Site: <span className="font-medium ">https://kidspace-3636d.web.app/</span></p>
+
+            </button>
+            <button className="flex" onClick={() => handleToLiveLink("https://github.com/S-M-ZUBAYER/Kidspace-day-care-")}>
+                <p className="my-3 text-blue-600 font-bold text-lg">GitHub Client Site: <span className="font-medium ">https://github.com/S-M-ZUBAYER/Kidspace-day-care-</span></p>
+
+            </button>
+            <button className="flex" onClick={() => handleToLiveLink("https://github.com/S-M-ZUBAYER/kidspace-day-care-server-site")}>
+                <p className="my-3 text-blue-600 font-bold text-lg">GitHub Server Site: <span className="font-medium ">https://github.com/S-M-ZUBAYER/kidspace-day-care-server-site</span></p>
+
+            </button>
+
             <h2 className="text-white font-semibold text-3xl">
                 Gallery:
             </h2>

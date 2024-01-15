@@ -3,8 +3,20 @@ import img1 from "../assets/StudyZone/Header.png"
 import img2 from "../assets/StudyZone/Details.png"
 import img3 from "../assets/StudyZone/Checkout.png"
 const StudyZone = () => {
+
+
+    const handleToLiveLink = (link) => {
+        window.open(link, '_blank');
+    };
     return (
         <div className="w-full py-24 sm:px-5 md:px-48   bg-gradient-to-r from-black via-blue-900 to-black text-white">
+            <h1 className="text-3xl underline text-center mb-10 font-bold" style={{
+                background: 'linear-gradient(90deg, #00FF00, #FFFF00)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+            }}>
+                StudyZone
+            </h1>
             <h2 className="text-white font-semibold text-3xl">
                 Overview:
             </h2>
@@ -29,9 +41,20 @@ const StudyZone = () => {
             <h2 className="text-white font-semibold text-3xl mt-5 mb-2">
                 Link:
             </h2>
-            <p className="my-5">Live Site: <span>https://study-zone-platform.web.app/</span></p>
-            <p className="my-5">GitHub Client Site: <span>https://github.com/S-M-ZUBAYER/Study-Zone-Client-Site</span></p>
-            <p className="my-5">GitHub Server Site: <span>https://github.com/S-M-ZUBAYER/Study-Zone-Server-Site</span></p>
+
+            <button className="flex" onClick={() => handleToLiveLink("https://study-zone-platform.web.app/")}>
+                <p className="my-3 text-blue-600 font-bold text-lg">Live Site: <span className="font-medium ">https://study-zone-platform.web.app/</span></p>
+
+            </button>
+            <button className="flex" onClick={() => handleToLiveLink("https://github.com/S-M-ZUBAYER/Study-Zone-Client-Site")}>
+                <p className="my-3 text-blue-600 font-bold text-lg">GitHub Client Site: <span className="font-medium ">https://github.com/S-M-ZUBAYER/Study-Zone-Client-Site</span></p>
+
+            </button>
+            <button className="flex" onClick={() => handleToLiveLink("https://github.com/S-M-ZUBAYER/Study-Zone-Server-Site")}>
+                <p className="my-3 text-blue-600 font-bold text-lg">GitHub Server Site: <span className="font-medium ">https://github.com/S-M-ZUBAYER/Study-Zone-Server-Site</span></p>
+
+            </button>
+
             <h2 className="text-white font-semibold text-3xl">
                 Gallery:
             </h2>

@@ -6,6 +6,7 @@ import Home from './Home';
 import NavBar from './NavBar';
 import Portfolio from './Portfolio';
 import SocialLinks from './SocialLinks';
+import Technologies from './Technologies';
 
 const HomePage = () => {
     return (
@@ -14,7 +15,8 @@ const HomePage = () => {
             <Home />
             <About />
             <Portfolio />
-            <Experience />
+            <Technologies></Technologies>
+            {/* <Experience /> */}
             <Contact />
             <SocialLinks />
 

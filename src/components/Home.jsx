@@ -9,13 +9,13 @@ const Home = () => {
       name="home"
       className="h-screen w-full   bg-gradient-to-r from-black via-blue-900 to-black"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-around h-full  md:flex-row">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-between h-full  md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-5xl sm:mt-12 font-bold text-white">
             I'm <span className="bg-gradient-to-r from-yellow-300 to-green-500 text-transparent bg-clip-text">S M ZUBAYER</span><br /> <span className="text-2xl sm:text-4xl">a Full Stack Developer</span>
           </h2>
           <p className="text-white py-4 max-w-md">
-            With an unwavering commitment to honing my programming skills, I've dedicated one and a half years to dynamic web development. Over the past year, I strategically focused on becoming a proficient Full Stack Developer. Currently employed at THT-Space Electrical Company Ltd., I've applied and enhanced my skills in a real-world setting. Eager to leverage this experience in a new professional chapter, I aim to contribute to and thrive within a dynamic and forward-thinking organization. Excited for the challenges and growth ahead.
+            With a solid foundation in dynamic web development, I have spent the two year refining my programming skills, with a strategic focus on becoming a proficient Full Stack Developer. Currently, I am applying my expertise at THT-Space Electrical Company Ltd., where I have gained valuable experience in a real-world setting. As I look ahead to new professional opportunities, I am eager to bring my skills to a forward-thinking organization that values innovation and growth. I am excited for the challenges ahead and committed to making meaningful contributions.
           </p>
 
           <div>
@@ -23,7 +23,7 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-green-600 to-cyan-400  cursor-pointer "
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">

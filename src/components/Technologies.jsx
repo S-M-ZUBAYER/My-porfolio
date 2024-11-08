@@ -19,6 +19,7 @@ import bootstrap from "../assets/bootstrap.png";
 import express from "../assets/express.png";
 import firebase from "../assets/firebase.png";
 import openai from "../assets/openai.jpeg";
+import Typescript from "../assets/Typescript.png";
 
 
 const Technologies = () => {
@@ -91,42 +92,48 @@ const Technologies = () => {
         },
         {
             id: 11,
+            src: Typescript,
+            title: "Typescript",
+            style: "shadow-blue-400",
+        },
+        {
+            id: 12,
             src: firebase,
             title: "firebase",
             style: "shadow-yellow-400",
         },
         {
-            id: 12,
+            id: 13,
             src: jwt,
             title: "JWT Token",
             style: "shadow-pink-400",
         },
         {
-            id: 13,
+            id: 14,
             src: strip,
             title: "Strip Payment",
             style: "shadow-blue-400",
         },
         {
-            id: 14,
+            id: 15,
             src: MySQL,
             title: "MySql",
             style: "shadow-orange-400",
         },
         {
-            id: 15,
+            id: 16,
             src: Mongoose,
             title: "Mongoose",
             style: "shadow-red-400",
         },
         {
-            id: 16,
+            id: 17,
             src: MongoDB,
             title: "MongoDB",
             style: "shadow-gray-400",
         },
         {
-            id: 17,
+            id: 18,
             src: github,
             title: "GitHub",
             style: "shadow-gray-400",
@@ -135,10 +142,10 @@ const Technologies = () => {
 
     return (
         <div
-            name="Technologies"
+            name="expertise"
             className=" bg-gradient-to-r from-black via-blue-900 to-black w-full  pt-48"
         >
-            <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+            <div className="max-w-screen-lg mx-auto py-4 flex flex-col justify-center w-full h-full text-white">
                 <div>
                     <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
                         Technologies

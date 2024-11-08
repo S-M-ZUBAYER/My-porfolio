@@ -3,14 +3,11 @@ import cricketLover from "../assets/portfolio/cricketLover.png";
 import tht from "../assets/portfolio/tht.png";
 import grozziie from "../assets/Grozziee/Dashboard.jpg";
 import school from "../assets/portfolio/school.png";
-import kidspace from "../assets/portfolio/kidspace.png";
-import studyZone from "../assets/portfolio/studyZone.png";
-// import reactParallax from "../assets/portfolio/reactParallax.jpg";
-// import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-// import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import exportImportSystem from "../assets/portfolio/ExportImportSystem.jpg";
+import afterSale from "../assets/portfolio/afterSale.jpg";
+import OnlinePrinting from "../assets/portfolio/OnlinePrinting.png";
 import { useNavigate } from "react-router-dom";
-import OpenAIProjects from "./OpenAIProjects";
-import OtherProjects from "./OtherProjects";
+
 
 const Portfolio = () => {
   const navigate = useNavigate()
@@ -20,46 +17,78 @@ const Portfolio = () => {
   const handleToCustomerService = () => {
     navigate('/THT-Space')
   }
+  const handleToOnlinePrinting = () => {
+    navigate('/grozziie_online_Printing')
+  }
+  const handleToAfterSalesManagement = () => {
+    navigate('/AfterSales_Management_System')
+  }
   const handleToGrozziieApp = () => {
     navigate('/GrozzieeApp')
   }
   const handleToSchoolManagement = () => {
     navigate('/school_management')
   }
-
-  const handleToKidspace = () => {
-    navigate('/kidSpace')
+  const handleToExportImportSystem = () => {
+    navigate('/export_import_system')
   }
-  const handleToStudyZone = () => {
-    navigate('/studyZone')
-  }
-  // const portfolios = [
-  //   {
-  //     id: 1,
-  //     src: cricketLover,
-  //     title: 'Cricket Lover',
-  //     description: "A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price..."
-  //   },
-  //   {
-  //     id: 2,
-  //     src: kidspace,
-  //     title: 'KidSpace',
-  //     description: "A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price..."
 
-  //   },
-  //   {
-  //     id: 3,
-  //     src: studyZone,
-  //     title: 'StudyZone',
-  //     description: "A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price..."
+  const portfolioList = [
+    {
+      src: tht,
+      title: "Grozziie",
+      description: "The THT-Space Electrical Company Ltd. website is a platform for the customer service team and admin panel to manage customer interactions. It enables answering inquiries, translating into multiple languages, communicating with international customers, and securely storing data.",
+      subtitle: "THT-Space Electrical Company Ltd.",
+      onClick: handleToCustomerService,
+    },
+    {
+      src: school,
+      title: "Zuss School Management System",
+      subtitle: "Ashte IT Foundation.",
+      description: "A dynamic platform for schools allows admins to gather information and create tailored school and admin sites. Schools can manage admissions, notices, attendance, routines, and fees, while admin sites enable fee processing, certificate issuance, ID generation, and content updates automatically.",
+      onClick: handleToSchoolManagement,
+    },
+    {
+      src: exportImportSystem,
+      title: "Export Import System",
+      subtitle: "Grozziie",
+      description: "The Export-Import Management System streamlines product setup, export data management, and financial processing. Each department—Product, Commercial, and Finance—handles tasks from product entry to payment verification, ensuring coordinated operations...",
+      onClick: handleToExportImportSystem,
+    },
+    {
+      src: afterSale,
+      title: "After Sales Management System",
+      subtitle: "Grozziie",
+      description: "The After Sale Management System (ASMS) website was developed to streamline and optimize the after-sales and warehouse operations of THT-Space Electrical Company...",
+      onClick: handleToAfterSalesManagement,
+    },
+    {
+      src: OnlinePrinting,
+      title: "Grozziie Online Printing",
+      subtitle: "Grozziie",
+      description: "A platform developed for THT-Space Electrical Company Ltd. to view and manage all product orders, print orders, and integrate with express delivery companies for seamless product shipment to customers...",
+      onClick: handleToOnlinePrinting,
+    },
+    {
+      src: grozziie,
+      title: "Grozziie APP",
+      subtitle: "Grozziie",
+      description: "A platform designed to cater to the needs of customers utilizing printers from THT-Space Electrical Company Ltd. Through this application...",
+      onClick: handleToGrozziieApp,
+    },
 
-  //   }
-  // ];
-
+    {
+      src: cricketLover,
+      title: "Cricket Lover",
+      subtitle: "My Own",
+      description: "A platform for buying and selling used cricket equipment. Ideal for cricket enthusiasts looking for affordable options...",
+      onClick: handleToCricketLover,
+    },
+  ]
 
   return (
     <div
-      name="Portfolio"
+      name="portfolio"
       className=" bg-gradient-to-r from-black via-blue-900 to-black w-full text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
@@ -70,151 +99,42 @@ const Portfolio = () => {
           </p>
           <p className="py-6">Check out some of my key projects right here</p>
         </div>
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {portfolioList.map((item, index) => (
+            <div key={index} className="relative shadow-lg rounded-lg overflow-hidden bg-white transition-transform duration-300 hover:shadow-2xl flex flex-col justify-between min-h-[400px]">
+              {/* Top section with image and background accents */}
+              <div className="flex items-center bg-gradient-to-br from-green-700 via-cyan-700 to-black p-4">
+                <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white mr-4">
+                  <img
+                    src={item.src}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+                  <p className="text-gray-200 text-sm">{item.subtitle || "Manager"}</p>
+                </div>
+              </div>
 
-        <div className="grid z-0 sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          <div className=" relative shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={tht}
-              alt=""
-              className="rounded-md rounded-b-none duration-200 hover:scale-105"
-            />
-            <div>
-              <h3 className="text-lg font-semibold pl-4 pt-1">
-                THT-Customer-Management-System
-              </h3>
+              {/* Middle section with information */}
+              <div className="p-6 bg-white border-t-4 border-green-600 flex-grow">
+                <p className="text-gray-800 text-sm mb-4">{item.description}</p>
+              </div>
+
+              {/* Bottom section with button */}
+              <div className="p-4 bg-gray-100 border-t">
+                <button
+                  onClick={item.onClick}
+                  className="w-full bg-gradient-to-r from-green-600 to-cyan-400 text-white py-2 font-bold rounded transition-colors duration-300 hover:from-blue-400 hover:to-blue-600"
+                >
+                  Details
+                </button>
+              </div>
             </div>
-            <div className="flex items-center justify-center">
-
-              <small className="p-4">
-                A site for THT-Space Electrical Company Ltd. Customer service team and admin panel use this site to ans questions and store data...
-              </small>
-            </div>
-            <button onClick={handleToCustomerService} className=" absolute bottom-0 text-center mx-auto w-full bg-gradient-to-t from-green-300 via-orange-400 to-yellow-300 rounded-b-md py-1 text-black font-semibold">
-              Details
-            </button>
-          </div>
-
-          <div className=" relative shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={grozziie}
-              alt=""
-              className="rounded-md rounded-b-none duration-200 hover:scale-105 h-36 w-full"
-            />
-            <div>
-              <h3 className="text-lg font-semibold pl-4 pt-1">
-                Grozziie APP
-              </h3>
-            </div>
-            <div className="flex items-center justify-center">
-
-              <small className="p-4">
-                A platform is designed to cater to the needs of customers utilizing printers from THT-Space Electrical Company Ltd. Through this application....
-              </small>
-            </div>
-            <button onClick={handleToGrozziieApp} className=" absolute bottom-0 text-center mx-auto w-full bg-gradient-to-t from-green-300 via-orange-400 to-yellow-300 rounded-b-md py-1 text-black font-semibold">
-              Details
-            </button>
-          </div>
-
-
-
-          <div className=" relative shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={school}
-              alt=""
-              className="rounded-md rounded-b-none duration-200 hover:scale-105"
-            />
-            <div>
-              <h3 className="text-xl font-bold pl-4 pt-1">
-                Zuss School Management System
-              </h3>
-            </div>
-            <div className="flex items-center justify-center">
-
-              <small className="p-4">
-                A dynamic website to crate new unique for a school from this website. Admin can collect information from a school to create their dynamic site...
-              </small>
-            </div>
-            <button onClick={handleToSchoolManagement} className=" absolute bottom-0 text-center mx-auto w-full bg-gradient-to-t from-green-300 via-orange-400 to-yellow-300 rounded-b-md py-1 text-black font-semibold">
-              Details
-            </button>
-          </div>
-
-          <div className="shadow-md relative shadow-gray-600 rounded-lg">
-            <img
-              src={cricketLover}
-              alt=""
-              className="rounded-md rounded-b-none duration-200 hover:scale-105"
-            />
-            <div>
-              <h3 className="text-xl font-bold pl-4 pt-1">
-                Cricket Lover
-              </h3>
-            </div>
-            <div className="flex items-center justify-center">
-
-              <small className="p-4">
-                A site to buying & selling platform for used cricket playing instruments.This site will help the crazy cricket lover to got the cricket instruments with low price...
-              </small>
-            </div>
-            <button onClick={handleToCricketLover} className="text-center absolute bottom-0 mx-auto w-full bg-gradient-to-t from-green-300 via-orange-400 to-yellow-300 rounded-b-md py-1 text-black font-semibold">
-              Details
-            </button>
-          </div>
-
-
-          {/* <div className=" relative shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={kidspace}
-              alt=""
-              className="rounded-md rounded-b-none duration-200 hover:scale-105"
-            />
-            <div>
-              <h3 className="text-xl font-bold pl-4 pt-1">
-                Kidspace
-              </h3>
-            </div>
-            <div className="flex items-center justify-center">
-
-              <small className="p-4">
-                In this website any one can find the specific time and activities for their child. That will be helpful for different kinds of parents, which parents generally busy with their job or other activities in maximum day...
-              </small>
-            </div>
-            <button onClick={handleToKidspace} className=" absolute bottom-0 text-center mx-auto w-full bg-gradient-to-t from-green-300 via-orange-400 to-yellow-300 rounded-b-md py-1 text-black font-semibold">
-              Details
-            </button>
-          </div>
-
-
-
-          <div className=" relative shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={studyZone}
-              alt=""
-              className="rounded-md rounded-b-none duration-200 hover:scale-105"
-            />
-            <div>
-              <h3 className="text-xl font-bold pl-4 pt-1">
-                StudyZone
-              </h3>
-            </div>
-            <div className="flex items-center justify-center">
-
-              <small className="p-4">
-                This site will help the students to gather knowledge about modern technology. Any one can buy any course about modern technology. And learn on this particular technology...
-              </small>
-            </div>
-            <button onClick={handleToStudyZone} className=" absolute bottom-0 text-center mx-auto w-full bg-gradient-to-t from-green-300 via-orange-400 to-yellow-300 rounded-b-md py-1 text-black font-semibold">
-              Details
-            </button>
-          </div> */}
+          ))}
         </div>
-
-
       </div>
-
-      <OpenAIProjects></OpenAIProjects>
-      {/* <OtherProjects></OtherProjects> */}
     </div>
   );
 };

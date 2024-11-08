@@ -24,14 +24,16 @@ import img21 from "../assets/THT/mall.png"
 import img22 from "../assets/THT/showProduct2.png"
 import img23 from "../assets/THT/showProduct-3.png"
 import img24 from "../assets/THT/showProduct.png"
+import img25 from "../assets/THT/LocationLogin.jpg"
+import img26 from "../assets/THT/ChattingUpdate.jpg"
 import ImageModal from './ImageModal';
 import { Link } from 'react-router-dom';
 
 const THT_Space = () => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
-    const mainSiteImg = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12]
-    const adminSiteImg = [img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24]
+    const mainSiteImg = [img25, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12]
+    const adminSiteImg = [img13, img14, img26, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24]
     const openImageModal = (imgSrc) => {
         setSelectedImage(imgSrc);
         setModalOpen(true);
@@ -64,30 +66,91 @@ const THT_Space = () => {
             <h2 className="text-white mt-12 font-semibold text-3xl">
                 Key Features:
                 <p className="text-base font-medium">
-                    <br />1. This website serves the customer service team and admin panel of THT-Space Electrical Company Ltd.
-                    <br />2. It integrates a Question & Answer system for the company's customers.
-                    <br />3. There's a customer service section for both customers and the customer service team. When a customer asks a question related to the product, company, shipping process, and more, the customer service team can search for specific questions on this site and provide relevant answers.
-                    <br />4. THT-Space Electrical Company has customers in different countries such as Malaysia, China, Vietnam, the Philippines, Thailand, Indonesia, and more, which leads to language diversity. Therefore, questions are automatically translated into Bengali and English, and corresponding answers are provided.
-                    <br />5. The website also includes a direct chat section for customers using our product's operating application.
-                    <br />6. Similar to an online shopping platform, there's a dedicated Q&A section for each shop name.
-                    <br />7. The site offers functionalities to store unknown questions and incorrect answers for analysis and allows adding missing question-answer pairs.
-                    <br />8. The admin panel enables the storage of various product information for this company.
-                    <br />9. There's also a page for translating sentences into any language, implemented using Open AI.
-                    <br />10. The site includes a feature to detect addresses. It provides a proper address format when a customer doesn't provide one in the correct language.
-                    <br />11. An account page is available for customer service personnel, displaying their total questions, unknown questions, and more.
-                    <br />12. The admin panel is accessible only by administrators. It offers user management features, allowing the admin to delete or edit users and assign admin privileges.
-                    <br />13. The "Add Q&A" page lets users add questions and answers for backend storage.
-                    <br />14. The "Add Warehouse & Cities" page enables the addition of warehouses and cities under each warehouse for different countries. This information is used in the backend for the shopping app and warehouse management system.
-                    <br />15. The "Add Model H&W" page allows adding model names and specifying regular height and width, as well as maximum height and width.
-                    <br />16. The "Add Background Image" page is used for adding background images categorized by height and width. These images are used to create labels in the THT-Space Electrical Company's product operating application.
-                    <br />17. The "Add Icons" page is used for adding icons categorized by height and width, also for label creation in the product operating application.
-                    <br />18. The "Add Mall Products" page displays comprehensive information about products, categorized by model number, and includes various images, videos, and files.
-                    <br />19. A backend component is also available to store information about products, categorized by model number and containing different types of media, for use in THT-Space Electrical Company Ltd's shopping application.
-                    <br />20. The "Add Event Products" page showcases detailed information about products by model number, featuring various images, videos, and files.
-                    <br />21. Similar to the Mall Products, a backend section is included to store information about products categorized by model number, for display in the THT-Space Electrical Company Ltd's shopping application.
-                    <br />22. This website is a single-page application.
-                    <br />23. Technologies used include HTML, CSS, Tailwind CSS, JavaScript, React.js, Node.js, OpenAI, Express.js, MySQL, and more.
+                    <span className="font-bold text-green-500">*** Customer Service & Admin Panel:</span>
+                    <p className="ml-5">
+                        1. This website serves the customer service team and admin panel of THT-Space Electrical Company Ltd.</p>
+
+                    <span className="font-bold text-green-500">*** Q&A System Integration:</span>
+                    <p className="ml-5">
+                        2. It integrates a Question & Answer system for the company's customers.</p>
+                    <p className="ml-5">
+                        3. The customer service section allows team members to search and provide answers to customer questions about products, shipping, and the company.</p>
+
+                    <span className="font-bold text-green-500">*** Multilingual Support:</span>
+                    <p className="ml-5">
+                        4. With customers in countries like Malaysia, China, Vietnam, the Philippines, and more, questions are automatically translated into Bengali and English, with answers provided accordingly.</p>
+
+                    <span className="font-bold text-green-500">*** Direct Chat Feature:</span>
+                    <p className="ml-5">
+                        5. The website includes a direct chat section for customers using our product's operating application.</p>
+
+                    <span className="font-bold text-green-500">*** Dedicated Q&A Sections:</span>
+                    <p className="ml-5">
+                        6. Similar to an online shopping platform, each shop has its dedicated Q&A section.</p>
+
+                    <span className="font-bold text-green-500">*** Unknown Questions & Answer Analysis:</span>
+                    <p className="ml-5">
+                        7. The site stores unknown questions and incorrect answers for analysis, with an option to add missing Q&A pairs.</p>
+
+                    <span className="font-bold text-green-500">*** Admin Panel Features:</span>
+                    <p className="ml-5">
+                        8. The admin panel allows the storage of various product information for the company.</p>
+                    <p className="ml-5">
+                        9. It also includes a page for translating sentences into any language using OpenAI.</p>
+
+                    <span className="font-bold text-green-500">*** Address Detection:</span>
+                    <p className="ml-5">
+                        10. The site can detect and correct improper address formats provided by customers.</p>
+
+                    <span className="font-bold text-green-500">*** Customer Service Account Page:</span>
+                    <p className="ml-5">
+                        11. Displays total questions, unknown questions, and more for customer service personnel.</p>
+
+                    <span className="font-bold text-green-500">*** User Management:</span>
+                    <p className="ml-5">
+                        12. Admins can manage users by deleting, editing, or assigning admin privileges.</p>
+
+                    <span className="font-bold text-green-500">*** Q&A Addition:</span>
+                    <p className="ml-5">
+                        13. A dedicated page lets users add questions and answers to backend storage.</p>
+
+                    <span className="font-bold text-green-500">*** Warehouse & City Addition:</span>
+                    <p className="ml-5">
+                        14. Users can add warehouses and cities under each warehouse for different countries, used in the shopping app and warehouse management system.</p>
+
+                    <span className="font-bold text-green-500">*** Model & Dimension Addition:</span>
+                    <p className="ml-5">
+                        15. Allows the addition of model names and specifications for regular and maximum height and width.</p>
+
+                    <span className="font-bold text-green-500">*** Background Image Addition:</span>
+                    <p className="ml-5">
+                        16. Enables the addition of background images categorized by dimensions, for label creation in the company's product operating application.</p>
+
+                    <span className="font-bold text-green-500">*** Icon Addition:</span>
+                    <p className="ml-5">
+                        17. Allows adding icons, categorized by dimensions, for label creation in the product operating application.</p>
+
+                    <span className="font-bold text-green-500">*** Mall Product Addition:</span>
+                    <p className="ml-5">
+                        18. Displays comprehensive product information, categorized by model number, with images, videos, and files.</p>
+
+                    <span className="font-bold text-green-500">*** Backend Product Storage:</span>
+                    <p className="ml-5">
+                        19. Stores product details, categorized by model number, for use in the shopping application.</p>
+
+                    <span className="font-bold text-green-500">*** Event Product Addition:</span>
+                    <p className="ml-5">
+                        20. Showcases detailed information about event-specific products by model number, with images, videos, and files.</p>
+
+                    <span className="font-bold text-green-500">*** Single-Page Application:</span>
+                    <p className="ml-5">
+                        21. This website operates as a single-page application.</p>
+
+                    <span className="font-bold text-green-500">*** Technologies Used:</span>
+                    <p className="ml-5">
+                        22. Technologies include HTML, CSS, Tailwind CSS, JavaScript, React.js, Node.js, OpenAI, Express.js, MySQL, and more.</p>
                 </p>
+
 
             </h2>
             <h2 className="text-white mt-12 font-semibold text-3xl">
@@ -112,8 +175,8 @@ const THT_Space = () => {
             <h2 className="text-white mt-12 font-semibold text-3xl">
                 Account:
             </h2>
-            <p className="my-5">Email: <span>sm@gmail.com</span></p>
-            <p className="my-5">Password: <span>123456</span></p>
+            <p className="my-5">Email: <span>sadiarumki00@gmail</span></p>
+            <p className="my-5">Password: <span>12345678</span></p>
             <p className="my-5">NB: <span>This account don't have the permission to access in the admin route.</span></p>
             <h2 className="text-white mt-12 font-semibold text-3xl">
                 Gallery:

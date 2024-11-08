@@ -15,6 +15,9 @@ import StudyZone from "./components/StudyZone";
 import THT_Space from "./components/THT-Space";
 import SchoolManagement from "./components/SchoolManagement";
 import GrozzieeApp from "./components/GrozzieeApp";
+import GrozziieOnlinePrinter from "./components/GrozziieOnlinePrinter";
+import AfterSalesManagement from "./components/AfterSalesManagement";
+import ExportImportSystem from "./components/ExportImportSystem";
 
 function App() {
   const routes = createBrowserRouter([
@@ -58,6 +61,18 @@ function App() {
         {
           path: '/school_management',
           element: <SchoolManagement></SchoolManagement>
+        },
+        {
+          path: '/export_import_system',
+          element: <ExportImportSystem></ExportImportSystem>
+        },
+        {
+          path: '/grozziie_online_Printing',
+          element: <GrozziieOnlinePrinter></GrozziieOnlinePrinter>
+        },
+        {
+          path: '/AfterSales_Management_System',
+          element: <AfterSalesManagement></AfterSalesManagement>
         },
       ]
     }

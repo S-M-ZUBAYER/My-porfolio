@@ -102,8 +102,8 @@ const CricketLover = () => {
             <h2 className="text-white mt-12 font-semibold text-3xl">
                 Link:
             </h2>
-            <button className="flex" onClick={() => handleToLiveLink("https://cricket-lover-52a96.web.app/")}>
-                <p className="my-3 text-blue-600 font-bold text-lg">Live Site: <span className="font-medium">https://cricket-lover-52a96.web.app/</span></p>
+            <button className="flex" onClick={() => handleToLiveLink("https://cricket-lover-point.netlify.app/")}>
+                <p className="my-3 text-blue-600 font-bold text-lg">Live Site: <span className="font-medium">https://cricket-lover-point.netlify.app/</span></p>
             </button>
 
             <button className="flex" onClick={() => handleToLiveLink("https://github.com/S-M-ZUBAYER/Cricket-Lover-client-site")}>

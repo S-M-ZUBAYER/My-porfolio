@@ -56,21 +56,55 @@ const GrozzieeApp = () => {
             </p>
             <h2 className="text-white mt-12 font-semibold text-3xl">
                 Key Features:
+
                 <p className="text-base font-medium">
-                    <br />1. Develop API to facilitate user registration and login functionality for the application..
-                    <br />2. Implement API to store diverse product information for display in the app and create API to showcase distinct images for the slider.
-                    <br />3. Create API to store each widget, enabling the creation and presentation of templates in app interface.
-                    <br />4. Incorporate the capability to store background images for template creation, and allow the use of emojis from the backend for template design.
-                    <br />5. tore and display relevant instructional and relative videos for app users.
-                    <br />6. Develop backend functionality for user interaction with the customer service team in case of any issues.
-                    <br />7. Showcase products available in the mall along with comprehensive details for purchase.
-                    <br />8. Feature event-specific products on the app, providing information for selling and offering discounts based on different festivals and occasions.
-                    <br />9. Provide APIs for storing purchase data and maintaining user shopping carts.
-                    <br />10. Implement an API for the warehouse to display information regarding product distribution, available stock, and advertisement quantities.
-                    <br />11. Develop API to store images of different colors for a product, allowing for varied product displays.
-                    <br />12. Create APIs for sorting and selling products based on model, price, and geographical location.
-                    <br />13. Technologies employed include Node.js, Express.js, MySQL, and others.
+                    <span className="font-bold text-green-500">*** User Registration & Login API:</span>
+                    <p className="ml-5">
+                        1. Develop an API to facilitate user registration and login functionality for the application.</p>
+
+                    <span className="font-bold text-green-500">*** Product Information & Slider API:</span>
+                    <p className="ml-5">
+                        2. Implement an API to store diverse product information for display in the app, and create an API to showcase distinct images for the slider.</p>
+
+                    <span className="font-bold text-green-500">*** Widget & Template API:</span>
+                    <p className="ml-5">
+                        3. Create an API to store each widget, enabling the creation and presentation of templates in the app interface.</p>
+                    <p className="ml-5">
+                        4. Incorporate the capability to store background images for template creation, and allow the use of emojis from the backend for template design.</p>
+
+                    <span className="font-bold text-green-500">*** Instructional Videos & Customer Service API:</span>
+                    <p className="ml-5">
+                        5. Store and display relevant instructional and relative videos for app users.</p>
+                    <p className="ml-5">
+                        6. Develop backend functionality for user interaction with the customer service team in case of any issues.</p>
+
+                    <span className="font-bold text-green-500">*** Product Display & Event-Specific Products API:</span>
+                    <p className="ml-5">
+                        7. Showcase products available in the mall along with comprehensive details for purchase.</p>
+                    <p className="ml-5">
+                        8. Feature event-specific products on the app, providing information for selling and offering discounts based on different festivals and occasions.</p>
+
+                    <span className="font-bold text-green-500">*** Purchase Data & Cart Management API:</span>
+                    <p className="ml-5">
+                        9. Provide APIs for storing purchase data and maintaining user shopping carts.</p>
+
+                    <span className="font-bold text-green-500">*** Warehouse & Stock API:</span>
+                    <p className="ml-5">
+                        10. Implement an API for the warehouse to display information regarding product distribution, available stock, and advertisement quantities.</p>
+
+                    <span className="font-bold text-green-500">*** Product Colors API:</span>
+                    <p className="ml-5">
+                        11. Develop an API to store images of different colors for a product, allowing for varied product displays.</p>
+
+                    <span className="font-bold text-green-500">*** Product Sorting & Selling API:</span>
+                    <p className="ml-5">
+                        12. Create APIs for sorting and selling products based on model, price, and geographical location.</p>
+
+                    <span className="font-bold text-green-500">*** Technologies:</span>
+                    <p className="ml-5">
+                        13. Technologies employed include Node.js, Express.js, MySQL, and others.</p>
                 </p>
+
 
             </h2>
             <h2 className="text-white mt-12 font-semibold text-3xl">

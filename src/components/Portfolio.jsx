@@ -14,6 +14,9 @@ const Portfolio = () => {
   const handleToCricketLover = () => {
     navigate('/cricketLover')
   }
+  const handleToWowoMartManagement = () => {
+    navigate('/WowoMart_Management_System')
+  }
   const handleToCustomerService = () => {
     navigate('/THT-Space')
   }
@@ -83,6 +86,13 @@ const Portfolio = () => {
       subtitle: "My Own",
       description: "A platform for buying and selling used cricket equipment. Ideal for cricket enthusiasts looking for affordable options...",
       onClick: handleToCricketLover,
+    },
+    {
+      src: cricketLover,
+      title: "WowoMart Management System",
+      subtitle: "My Own",
+      description: "A platform for buying and selling used cricket equipment. Ideal for cricket enthusiasts looking for affordable options...",
+      onClick: handleToWowoMartManagement,
     },
   ]
 

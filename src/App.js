@@ -18,6 +18,7 @@ import GrozzieeApp from "./components/GrozzieeApp";
 import GrozziieOnlinePrinter from "./components/GrozziieOnlinePrinter";
 import AfterSalesManagement from "./components/AfterSalesManagement";
 import ExportImportSystem from "./components/ExportImportSystem";
+import WowoMartManagement from "./components/WowoMartManagement";
 
 function App() {
   const routes = createBrowserRouter([
@@ -73,6 +74,10 @@ function App() {
         {
           path: '/AfterSales_Management_System',
           element: <AfterSalesManagement></AfterSalesManagement>
+        },
+        {
+          path: '/WowoMart_Management_System',
+          element: <WowoMartManagement></WowoMartManagement>
         },
       ]
     }

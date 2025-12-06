@@ -1,24 +1,26 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import About from "./components/About";
-import Blog from "./components/Blog";
-import Contact from "./components/Contact";
-import CricketLover from "./components/CricketLover";
-import Experience from "./components/Experience";
-import Home from "./components/Home";
-import HomePage from "./components/HomePage";
-import Kidspace from "./components/Kidspace";
-import Main from "./components/Main";
-import NavBar from "./components/NavBar";
-import Portfolio from "./components/Portfolio";
-import SocialLinks from "./components/SocialLinks";
-import StudyZone from "./components/StudyZone";
-import THT_Space from "./components/THT-Space";
-import SchoolManagement from "./components/SchoolManagement";
-import GrozzieeApp from "./components/GrozzieeApp";
-import GrozziieOnlinePrinter from "./components/GrozziieOnlinePrinter";
-import AfterSalesManagement from "./components/AfterSalesManagement";
-import ExportImportSystem from "./components/ExportImportSystem";
-import WowoMartManagement from "./components/WowoMartManagement";
+import About from "./components/HomePage/About";
+import Blog from "./components/BlogPage/Blog";
+import Contact from "./components/HomePage/Contact";
+import CricketLover from "./components/detailsPages/CricketLover";
+import Experience from "./components/HomePage/Experience";
+import Home from "./components/HomePage/Home";
+import HomePage from "./components/HomePage/HomePage";
+import Kidspace from "./components/detailsPages/Kidspace";
+import Main from "./components/SharedPage/Main";
+import NavBar from "./components/SharedPage/NavBar";
+import Portfolio from "./components/HomePage/Portfolio";
+import SocialLinks from "./components/SharedPage/SocialLinks";
+import StudyZone from "./components/detailsPages/StudyZone";
+import THT_Space from "./components/detailsPages/THT-Space";
+import SchoolManagement from "./components/detailsPages/SchoolManagement";
+import GrozzieeApp from "./components/detailsPages/GrozzieeApp";
+import GrozziieOnlinePrinter from "./components/detailsPages/GrozziieOnlinePrinter";
+import AfterSalesManagement from "./components/detailsPages/AfterSalesManagement";
+import ExportImportSystem from "./components/detailsPages/ExportImportSystem";
+import WowoMartManagement from "./components/detailsPages/WowoMartManagement";
+import TaskManagementSystem from "./components/detailsPages/TaskManagementSystem";
+import FaceAttendanceManagementSystem from "./components/detailsPages/FaceAttendanceManagementSystem";
 
 function App() {
   const routes = createBrowserRouter([
@@ -52,7 +54,7 @@ function App() {
           element: <StudyZone></StudyZone>
         },
         {
-          path: '/THT-Space',
+          path: '/Customer_Management_System',
           element: <THT_Space></THT_Space>
         },
         {
@@ -60,11 +62,11 @@ function App() {
           element: <GrozzieeApp></GrozzieeApp>
         },
         {
-          path: '/school_management',
+          path: '/School_Management_System',
           element: <SchoolManagement></SchoolManagement>
         },
         {
-          path: '/export_import_system',
+          path: '/Export_Import_Management_system',
           element: <ExportImportSystem></ExportImportSystem>
         },
         {
@@ -78,6 +80,14 @@ function App() {
         {
           path: '/WowoMart_Management_System',
           element: <WowoMartManagement></WowoMartManagement>
+        },
+        {
+          path: '/Task_Management_System',
+          element: <TaskManagementSystem></TaskManagementSystem>
+        },
+        {
+          path: '/Face_Attendance_Management_System',
+          element: <FaceAttendanceManagementSystem></FaceAttendanceManagementSystem>
         },
       ]
     }

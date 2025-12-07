@@ -72,71 +72,140 @@ const CricketLover = () => {
       </h1>
       <h2 className="text-white font-semibold text-3xl">Overview:</h2>
       <p className="my-5">
-        A site to buying & selling platform for used cricket playing
-        instruments.This site will help the crazy cricket lover to got the
-        cricket instruments with low price...
+        A complete buying and selling platform for used cricket playing
+        instruments. This website helps cricket lovers purchase quality cricket
+        equipment at affordable prices while allowing sellers to easily list,
+        advertise, and sell their products through a secure and user-friendly
+        digital marketplace.
       </p>
-      <h2 className="text-white mt-12 font-semibold text-3xl">
-        Key Features:
-        <p className="text-base font-medium">
-          <br />
-          1. In this website All cricket instruments seller can easily sell
-          their products.
-          <br />
-          2. In this website All crazy cricket lover can easily buy their
-          products.
-          <br />
-          3. Seller can easily add their products and advertise their new
-          collection in home page.
-          <br />
-          4. Buyer can easily chose any product and buy their necessary
-          products.
-          <br />
-          5. Admin can monitoring this site , he has the ability to verify the
-          seller and able delete the seller and buyer account.
-          <br />
-          6. This ia a single page application.
-          <br />
-          7. I use firebase authentication system to register user and login.
-          <br />
-          8. In Home page any user can see the available product category.
-          <br />
-          9. Sell can add their product to advertisement. These product will
-          show in the HomePage.
-          <br />
-          10. Sell can add their product to advertisement. These product will
-          show in the HomePage.
-          <br />
-          11. User can check which product seller are authorized by the admin
-          and which are not the authorized person easily. .
-          <br />
-          12. In admin dashboard a admin can easily check all user, all buyer
-          and all seller list and admin can edit and delete these any person
-          easily.
-          <br />
-          13. Admin can make a seller authorized easily .
-          <br />
-          14. As a buyer any user can buy any product from this site.
-          <br />
-          15. As a buyer any user can save a product as a wishlist from this
-          site.
-          <br />
-          16. Here any buy can pay to buy the product in online. Here i user
-          Stipe payment system.
-          <br />
-          16. A seller can easily add a new product to buy.
-          <br />
-          16. In seller dashboard there also all seller product will be show
-          with the current status. Such as sold, Advertised, Advertise.
-          <br />
-          17. In seller dashboard any seller can add any product as advertise
-          team and also show sold if any product have already sold. and also
-          seller can delete their product information.
-          <br />
-          7. I use HTML,CSS,Tailwind,some CSS components, JavaScript, React js,
-          Jwt Token Node js, MondgoDB, stripe for payment etc.
+
+      <h2 className="text-white mt-12 font-semibold text-3xl">Key Features:</h2>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Buyer & Seller Marketplace:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          1. Cricket instrument sellers can easily list and sell their products.
         </p>
-      </h2>
+        <p className="ml-5">
+          2. Cricket lovers can browse and buy products at affordable prices.
+        </p>
+        <p className="ml-5">
+          3. Buyers can select any product and complete the purchase securely.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Product Advertisement System:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          4. Sellers can advertise their products on the home page.
+        </p>
+        <p className="ml-5">
+          5. Advertised products are displayed prominently on the homepage.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Authentication & Security:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          6. Firebase Authentication is used for secure user registration and
+          login.
+        </p>
+        <p className="ml-5">
+          7. Only verified users can access selling and buying features.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Admin Monitoring & Control:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">8. Admin can monitor the entire website.</p>
+        <p className="ml-5">9. Admin can verify sellers.</p>
+        <p className="ml-5">
+          10. Admin can delete seller and buyer accounts when necessary.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Admin Dashboard:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          11. Admin can view all users, buyers, and sellers in one dashboard.
+        </p>
+        <p className="ml-5">
+          12. Admin can edit, delete, and authorize any seller.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Wishlist & Order Features:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">13. Buyers can save products to their wishlist.</p>
+        <p className="ml-5">
+          14. Buyers can purchase products directly from the platform.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Payment System:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          15. Secure online payments are supported using the Stripe payment
+          gateway.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Seller Dashboard:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">16. Sellers can add new products at any time.</p>
+        <p className="ml-5">
+          17. Sellers can view all their products with status such as Available,
+          Advertised, and Sold.
+        </p>
+        <p className="ml-5">
+          18. Sellers can advertise products, mark products as sold, and delete
+          product listings.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Home Page & Categories:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          19. Users can view available product categories on the home page.
+        </p>
+        <p className="ml-5">
+          20. All advertised products are displayed on the homepage.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Technology Stack:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          21. Built with HTML, CSS, Tailwind CSS, JavaScript, and React.js.
+        </p>
+        <p className="ml-5">
+          22. Backend powered by Node.js, MongoDB, and JWT authentication.
+        </p>
+        <p className="ml-5">
+          23. Stripe is used for secure online payment processing.
+        </p>
+      </p>
+
       <h2 className="text-white mt-12 font-semibold text-3xl">Technologies:</h2>
       <p>
         {" "}

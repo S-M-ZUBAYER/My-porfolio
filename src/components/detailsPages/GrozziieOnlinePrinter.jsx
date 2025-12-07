@@ -27,6 +27,8 @@ import img23 from "../../assets/GrozziieOnlinePrinting/Tiktok/ShippingOrderList.
 import img24 from "../../assets/GrozziieOnlinePrinting/Tiktok/orderAcceptAndPackageing.jpg";
 import img25 from "../../assets/GrozziieOnlinePrinting/Tiktok/OrderShippingAndPrinting.jpg";
 import img26 from "../../assets/GrozziieOnlinePrinting/Tiktok/OnTheWayorderList.jpg";
+import img27 from "../../assets/GrozziieOnlinePrinting/Common/AddShop/addShop.png";
+import img28 from "../../assets/GrozziieOnlinePrinting/Common/AddShop/shopRedirect.jpg";
 
 import ImageModal from "../SharedPage/ImageModal";
 import { Link } from "react-router-dom";
@@ -34,24 +36,14 @@ import { Link } from "react-router-dom";
 const GrozziieOnlinePrinter = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
-  const mainSiteImg = [
-    img1,
-    img2,
-    img3,
-    img4,
-    img5,
-    img6,
-    img7,
+
+  const AuthenticaionSecurityImg = [img1, img2, img3, img4, img5];
+  const languageSupportImg = [img17];
+  const DashboardShopIntegrationImg = [img7, img14, img15, img16, img27, img28];
+  const TikTokLazadaShopeeImg = [
     img8,
     img9,
     img10,
-    img11,
-    img12,
-    img13,
-    img14,
-    img15,
-    img16,
-    img17,
     img18,
     img19,
     img20,
@@ -61,7 +53,11 @@ const GrozziieOnlinePrinter = () => {
     img24,
     img25,
     img26,
+    img12,
+    img13,
   ];
+  const settingDeliveryImg = [img11];
+  const ContactImg = [img6];
 
   const openImageModal = (imgSrc) => {
     setSelectedImage(imgSrc);
@@ -97,97 +93,191 @@ const GrozziieOnlinePrinter = () => {
       </h1>
       <h2 className="text-white font-semibold text-3xl">Overview:</h2>
       <p className="my-5">
-        A comprehensive platform developed for THT-Space Electrical Company Ltd.
-        that allows users to view, manage, and print product orders. The system
-        integrates with express delivery companies to facilitate seamless
-        product shipments. It also supports the creation of manual orders and
-        automates the order acceptance and printing processes, streamlining
-        operations from order management to delivery
+        A complete multi-platform order management system designed to manage
+        user authentication, multi-language support, shop integration, order
+        processing, and automated delivery workflows across major e-commerce
+        platforms like TikTok, Lazada, and Shopee. The system allows users to
+        securely register, manage multiple shops, process orders in real time,
+        print waybills in bulk, track shipment statuses, and communicate
+        directly through the built-in contact system.
       </p>
+
       <h2 className="text-white mt-12 font-semibold text-3xl">Key Features:</h2>
+
       <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
-        Grozziie Online Printing:-
+        User Authentication & Security:-
       </h3>
       <p className="text-base font-medium">
-        <span className="font-bold text-green-500">
-          *** Multi-language Support:
-        </span>
+        <span className="font-bold text-green-500">*** Registration:</span>
         <p className="ml-5">
-          1. The platform supports both Chinese and English, enhancing
-          accessibility for diverse user bases.
+          1. Users must register using a valid email address.
+        </p>
+        <p className="ml-5">
+          2. An OTP is sent to the registered email to successfully complete the
+          registration process.
         </p>
 
         <span className="font-bold text-green-500">
-          *** Real-time Dashboard Overview:
+          *** Password Recovery & Change:
         </span>
         <p className="ml-5">
-          2. The homepage provides real-time metrics like the number of printed
-          orders, delivered products, refunds, and pending shipments for a
-          comprehensive business overview.
-        </p>
-
-        <span className="font-bold text-green-500">
-          *** Batch Printer Functionality:
-        </span>
-        <p className="ml-5">
-          3. Manage product orders on a single page, with search capabilities
-          across various fields.
+          3. Users can recover forgotten passwords using their registered email
+          with OTP verification.
         </p>
         <p className="ml-5">
-          4. Pagination support for navigating large sets of orders.
-        </p>
-        <p className="ml-5">
-          5. Send products to customers directly through an integrated delivery
-          system.
-        </p>
-        <p className="ml-5">
-          6. Add templates for express companies and branches, allowing store
-          owners to generate demo waybills and select the appropriate waybill
-          template for orders.
-        </p>
-
-        <span className="font-bold text-green-500">
-          *** Order Management & Processing:
-        </span>
-        <p className="ml-5">
-          7. For each batch, users can select an express delivery company to
-          process orders and print waybills.
-        </p>
-        <p className="ml-5">
-          8. After printing, orders are automatically marked as accepted, and
-          warehouse staff can use the waybill number for shipping.
-        </p>
-
-        <span className="font-bold text-green-500">
-          *** Single Order Management:
-        </span>
-        <p className="ml-5">
-          9. Inspect each order in detail before processing and shipping.
-        </p>
-        <p className="ml-5">
-          10. Reprint waybills and access order data for review anytime.
-        </p>
-
-        <span className="font-bold text-green-500">*** Data Management:</span>
-        <p className="ml-5">
-          11. Save sender and receiver information for quicker manual order
-          creation.
-        </p>
-        <p className="ml-5">
-          12. Export order data to Excel for record-keeping and reporting.
-        </p>
-        <p className="ml-5">
-          13. Import order data from Excel for easier bulk processing.
-        </p>
-
-        <span className="font-bold text-green-500">
-          *** Default Delivery Company Settings:
-        </span>
-        <p className="ml-5">
-          14. Set a default express delivery company to streamline the dispatch
-          process, removing the need to select a company for each order.
+          4. Users can change their password using their current password and
+          confirm the new password with OTP sent to their email.
         </p>
       </p>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-12 sm:px-0 py-5">
+        {AuthenticaionSecurityImg?.map((perImg, index) => (
+          <img
+            key={index}
+            src={perImg}
+            alt="Authentication"
+            className="cursor-pointer rounded-lg"
+            onClick={() => openImageModal(perImg)}
+          />
+        ))}
+      </div>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Multi-Language Support:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          5. The platform supports 7 languages including English, Chinese,
+          Malaysian, Indonesian, Vietnamese, Thai, and Filipino.
+        </p>
+      </p>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-12 sm:px-0 py-5">
+        {languageSupportImg?.map((perImg, index) => (
+          <img
+            key={index}
+            src={perImg}
+            alt="Language Support"
+            className="cursor-pointer rounded-lg"
+            onClick={() => openImageModal(perImg)}
+          />
+        ))}
+      </div>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Dashboard & Shop Integration:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          6. Users can add and authorize multiple shops from TikTok, Shopee, and
+          Lazada.
+        </p>
+        <p className="ml-5">
+          7. The dashboard displays order counts by platform and status such as
+          New, Pending, On the Way, and Delivered.
+        </p>
+        <p className="ml-5">
+          8. Users can navigate directly to specific platform order pages from
+          the dashboard cards.
+        </p>
+        <p className="ml-5">
+          9. The dashboard displays analytics and order activity for the last 7
+          days using interactive charts.
+        </p>
+      </p>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-12 sm:px-0 py-5">
+        {DashboardShopIntegrationImg?.map((perImg, index) => (
+          <img
+            key={index}
+            src={perImg}
+            alt="Dashboard Integration"
+            className="cursor-pointer rounded-lg"
+            onClick={() => openImageModal(perImg)}
+          />
+        ))}
+      </div>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        TikTok, Lazada & Shopee Order Processing:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          10. Each platform has its own dedicated order management page.
+        </p>
+        <p className="ml-5">
+          11. New orders are displayed separately for each platform.
+        </p>
+        <p className="ml-5">
+          12. Users can accept and pack orders with a single button click.
+        </p>
+        <p className="ml-5">
+          13. Multiple orders can be selected and printed as bulk waybills in
+          one click.
+        </p>
+        <p className="ml-5">
+          14. Supports single-field and multi-field searching with date
+          range–based order filtering.
+        </p>
+        <p className="ml-5">
+          15. After printing, courier services are automatically notified for
+          product pickup.
+        </p>
+        <p className="ml-5">
+          16. Order status updates are tracked step-by-step including Shipped,
+          Out for Delivery, and Delivered.
+        </p>
+      </p>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-12 sm:px-0 py-5">
+        {TikTokLazadaShopeeImg?.map((perImg, index) => (
+          <img
+            key={index}
+            src={perImg}
+            alt="Order Processing"
+            className="cursor-pointer rounded-lg"
+            onClick={() => openImageModal(perImg)}
+          />
+        ))}
+      </div>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Settings & Delivery Configuration:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          17. Users can configure delivery types separately for each shopping
+          platform.
+        </p>
+      </p>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-12 sm:px-0 py-5">
+        {settingDeliveryImg?.map((perImg, index) => (
+          <img
+            key={index}
+            src={perImg}
+            alt="Delivery Settings"
+            className="cursor-pointer rounded-lg"
+            onClick={() => openImageModal(perImg)}
+          />
+        ))}
+      </div>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Contact & Communication:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          18. Users can send messages directly to the support team via the
+          contact form.
+        </p>
+      </p>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-12 sm:px-0 py-5">
+        {ContactImg?.map((perImg, index) => (
+          <img
+            key={index}
+            src={perImg}
+            alt="Contact"
+            className="cursor-pointer rounded-lg"
+            onClick={() => openImageModal(perImg)}
+          />
+        ))}
+      </div>
 
       <h2 className="text-white mt-12 font-semibold text-3xl">Technologies:</h2>
       <p>
@@ -225,23 +315,6 @@ const GrozziieOnlinePrinter = () => {
         </p>
       </button>
 
-      <h2 className="text-white mt-12 font-semibold text-3xl">
-        Grozziie Online Printing Site Gallery:
-      </h2>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 py-5">
-        {mainSiteImg &&
-          mainSiteImg.length > 0 &&
-          mainSiteImg?.map((perImg, index) => {
-            return (
-              <img
-                key={index}
-                src={perImg}
-                alt=""
-                onClick={() => openImageModal(perImg)}
-              />
-            );
-          })}
-      </div>
       {isModalOpen && (
         <ImageModal
           imgSrc={selectedImage}

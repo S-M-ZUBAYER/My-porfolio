@@ -102,103 +102,210 @@ const FaceAttendanceManagementSystem = () => {
       </h1>
       <h2 className="text-white font-semibold text-3xl">Overview:</h2>
       <p className="my-5">
-        A centralized Website Management system For Grozziie App to manage
-        face-recognition attendance devices, employees, Salary Rules, Salary
-        Calculation, and daily operations. Supports admin and employee roles,
-        real-time sync, and secure QR/password workflows.
+        Grozziie Face Attendance Management System is a secure and intelligent
+        employee attendance and payroll solution designed for companies to
+        manage workforce activities using face recognition devices. The system
+        provides real-time attendance tracking, employee management, salary
+        calculation, leave approval, device monitoring, and fully customizable
+        payroll and attendance rules—all controlled by Admin and HR roles.
       </p>
 
-      <h2 className="text-white font-semibold text-3xl">
-        Key Features:
-        <p className="text-base font-medium">
-          <br />
-          1. Multi-country sellers can apply to create their own shops with
-          payment verification.
-          <br />
-          2. Admin-controlled product upload & approval system.
-          <br />
-          3. Automated seller account expiration & renewal.
-          <br />
-          4. Coupon & discount management for categories and special customers.
-        </p>
-      </h2>
+      <h2 className="text-white mt-12 font-semibold text-3xl">Key Features:</h2>
 
-      <h2 className="text-white font-semibold text-3xl mt-10">
-        Detailed Features:
-      </h2>
-      <p className="text-base font-medium my-5">
-        <br />
-        <strong>1. Multi-Country Shop Creation</strong>
-        <br />- Any company can apply to create a shop on WowoMart.
-        <br />- Application includes payment completion through the management
-        system.
-        <br />- Admin reviews and approves shop requests before activation.
-        <br />
-        <br />
-        <strong>2. Device Management</strong>
-        <br />- Add devices, activate/switch one active device at a time, view
-        device name/MAC/employee count.
-        <br />- Device settings: change password, change time, restore device.
-        <br />- Remove device when needed.
-        <br />
-        <br />
-        <strong>5. Employee Management</strong>
-        <br />- Work Type: Home / Onsite / Both.
-        <br />- Attendance Method: Check-out button / Face attendance / Both.
-        <br />- Offline punch: Yes/No.
-        <br />- Visibility control: Absent, Late in, Leaves, Overtime, Weekly
-        activities (or Select all).
-        <br />- Overtime eligibility: Yes/No.
-        <br />- Move employee between devices.
-        <br />- Pay Period & Salary Rules per employee: Normal Month, Monthly,
-        Semi-Monthly, Bi-Weekly, Weekly, Flexible.
-        <br />
-        <br />
-        <strong>6. Add Employees</strong>
-        <br />- Required: photo, full name, employee ID, department,
-        designation.
-        <br />- Also: joining date, address, type
-        (Full-time/Contractual/Intern/Part-Time), email, phone, device
-        assignment, image precision.
-        <br />- Roles: Leader and/or Sub Admin.
-        <br />- “Difficult to add” option for complex faces.
-        <br />
-        <br />
-        <strong>7. Employee List Management</strong>
-        <br />- Search, view profiles, edit details, change assigned device.
-        <br />- Delete single/multiple employees (with confirmation).
-        <br />- Export list to Excel.
-        <br />
-        <br />
-        <strong>8. Admin Management</strong>
-        <br />- View all admins and connected devices, multiple admins per
-        device.
-        <br />- Remove admin (requires device password for security).
-        <br />
-        <br />
-        <strong>9. Notice Management</strong>
-        <br />- Send announcements/tasks: select employee(s) or Select All,
-        title, description, single attachment (max 1 MB: PDF/DOC/JPG/PNG/XLS).
-        <br />- One-way delivery with in-app notifications.
-        <br />
-        <br />
-        <strong>10. Leave Approval</strong>
-        <br />- Review requests: type, dates, duration, reason, attachments,
-        status.
-        <br />- Approve/Reject with remarks.
-        <br />- Edit leave category from the request.
-        <br />
-        <br />
-        <strong>11. Security & Access</strong>
-        <br />- QR-based employee binding (QRs expire; regenerate anytime).
-        <br />- Admin device password required; factory reset (long press power)
-        clears old password.
-        <br />
-        <br />
-        <strong>12. Connectivity Requirements</strong>
-        <br />- Bluetooth and Location must be ON for scanning/pairing and
-        nearby device discovery.
-        <br />- Real-time sync after successful connection.
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Login Restriction & Device Management:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          1. Only Admin and HR users can access the system; public registration
+          is disabled.
+        </p>
+        <p className="ml-5">
+          2. Admin can manage all attendance devices and synchronize employee
+          data for a specific company.
+        </p>
+      </p>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Dashboard Overview:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          3. Displays today’s and date-wise attendance summaries including
+          Total, Present, Absent, Late Punch, and Leave employees.
+        </p>
+        <p className="ml-5">
+          4. Each summary card redirects to its respective details page.
+        </p>
+        <p className="ml-5">
+          5. Notification panel shows leave requests, holiday announcements, and
+          important alerts for Admin and HR.
+        </p>
+      </p>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Employee Management:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          6. Displays employee lists with department-wise filtering.
+        </p>
+        <p className="ml-5">
+          7. Admin and HR can update employee information at any time.
+        </p>
+        <p className="ml-5">
+          8. QR codes are generated for each employee to access the Grozziie
+          Attendance App.
+        </p>
+        <p className="ml-5">
+          9. Multiple employee records can be exported to Excel with full
+          details.
+        </p>
+      </p>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Resigned Employee Management:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          10. Displays all resigned employees with full records.
+        </p>
+        <p className="ml-5">
+          11. Admin and HR can review and update resigned employee information.
+        </p>
+      </p>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Attendance Tracking:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          12. Displays All, Present, and Absent attendance sheets by date and
+          date range.
+        </p>
+        <p className="ml-5">
+          13. Admin and HR can export daily or monthly attendance reports for
+          all or selected employees.
+        </p>
+      </p>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Salary Calculation:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          14. Salary calculation page shows employee list with calculation
+          preview option.
+        </p>
+        <p className="ml-5">
+          15. Detailed salary breakdown includes base salary, food allowance,
+          house rent, transport cost, overtime, deductions, penalties, and net
+          payable amount.
+        </p>
+      </p>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Employee Pay Rules Management:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          16. Admin can edit pay periods and salary rules for one or multiple
+          selected employees for special cases.
+        </p>
+      </p>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Device List Monitoring:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          17. Displays all attendance devices with detailed information.
+        </p>
+        <p className="ml-5">
+          18. Shows how many employees are connected to each device.
+        </p>
+      </p>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Admin Management:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">19. Displays all admin users.</p>
+        <p className="ml-5">
+          20. Super admin can delete or disable any admin account.
+        </p>
+      </p>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Leave Approval System:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          21. Shows all leave requests across all leave categories.
+        </p>
+        <p className="ml-5">
+          22. Admin or HR can approve or reject leave requests.
+        </p>
+        <p className="ml-5">
+          23. Employees receive real-time notifications in the mobile app.
+        </p>
+      </p>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Advanced Attendance & Payroll Rules:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          24. Configurable work shift scheduling with custom holidays and
+          weekends.
+        </p>
+        <p className="ml-5">
+          25. Flexible work policies including replacement holidays and
+          adjustable settings.
+        </p>
+        <p className="ml-5">
+          26. Comprehensive overtime management for weekdays, weekends, and
+          holidays.
+        </p>
+        <p className="ml-5">
+          27. Smart lateness control with multi-level warnings, penalties, and
+          fines.
+        </p>
+        <p className="ml-5">
+          28. Automated deductions for late arrival, early departure, absence,
+          and missed punch.
+        </p>
+        <p className="ml-5">
+          29. Overtime-to-lateness adjustment with optional exclusion rules.
+        </p>
+        <p className="ml-5">
+          30. Leave management system with total leave limits and special
+          documents.
+        </p>
+        <p className="ml-5">
+          31. Work-on-holiday exchange and replacement day tracking.
+        </p>
+        <p className="ml-5">
+          32. Piece-rate salary calculation with automatic leave deduction.
+        </p>
+        <p className="ml-5">
+          33. Fully customizable payroll rules for accurate and transparent
+          salary processing.
+        </p>
+      </p>
+
+      <h3 className=" text-lime-300 mt-4 font-semibold text-xl underline">
+        Pay Period Management:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          34. Admin can define monthly salary payment schedules for all
+          employees.
+        </p>
+        <p className="ml-5">
+          35. Supports multiple pay structures such as Monthly, Semi-Monthly,
+          and Bi-Weekly payroll cycles.
+        </p>
       </p>
 
       <h2 className="text-white font-semibold text-3xl mt-5 mb-2">

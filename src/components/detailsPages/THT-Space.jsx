@@ -96,181 +96,224 @@ const THT_Space = () => {
       </h1>
       <h2 className="text-white font-semibold text-3xl">Overview:</h2>
       <p className="my-5">
-        {" "}
-        A site for THT-Space Electrical Company Ltd. Customer service team and
-        admin panel use this site to store data for make backend and answer all
-        the questions for customer related to the product of THT-Space
-        Electrical Company Ltd. and store data...
+        A centralized customer service and admin management platform developed
+        for THT-Space Electrical Company Ltd. This system is used by the
+        customer service team and administrators to manage product-related
+        inquiries, store backend data, operate automated and manual customer
+        support, and maintain all product, warehouse, and application-related
+        information in one secure platform.
       </p>
-      <h2 className="text-white mt-12 font-semibold text-3xl">
-        Key Features:
-        <p className="text-base font-medium">
-          <span className="font-bold text-green-500">
-            *** Customer Service & Admin Panel:
-          </span>
-          <p className="ml-5">
-            1. This website serves the customer service team and admin panel of
-            THT-Space Electrical Company Ltd.
-          </p>
 
-          <span className="font-bold text-green-500">
-            *** Q&A System Integration:
-          </span>
-          <p className="ml-5">
-            2. It integrates a Question & Answer system for the company's
-            customers.
-          </p>
-          <p className="ml-5">
-            3. The customer service section allows team members to search and
-            provide answers to customer questions about products, shipping, and
-            the company.
-          </p>
+      <h2 className="text-white mt-12 font-semibold text-3xl">Key Features:</h2>
 
-          <span className="font-bold text-green-500">
-            *** Multilingual Support:
-          </span>
-          <p className="ml-5">
-            4. With customers in countries like Malaysia, China, Vietnam, the
-            Philippines, and more, questions are automatically translated into
-            Bengali and English, with answers provided accordingly.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Direct Chat Feature:
-          </span>
-          <p className="ml-5">
-            5. The website includes a direct chat section for customers using
-            our product's operating application.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Dedicated Q&A Sections:
-          </span>
-          <p className="ml-5">
-            6. Similar to an online shopping platform, each shop has its
-            dedicated Q&A section.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Unknown Questions & Answer Analysis:
-          </span>
-          <p className="ml-5">
-            7. The site stores unknown questions and incorrect answers for
-            analysis, with an option to add missing Q&A pairs.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Admin Panel Features:
-          </span>
-          <p className="ml-5">
-            8. The admin panel allows the storage of various product information
-            for the company.
-          </p>
-          <p className="ml-5">
-            9. It also includes a page for translating sentences into any
-            language using OpenAI.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Address Detection:
-          </span>
-          <p className="ml-5">
-            10. The site can detect and correct improper address formats
-            provided by customers.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Customer Service Account Page:
-          </span>
-          <p className="ml-5">
-            11. Displays total questions, unknown questions, and more for
-            customer service personnel.
-          </p>
-
-          <span className="font-bold text-green-500">*** User Management:</span>
-          <p className="ml-5">
-            12. Admins can manage users by deleting, editing, or assigning admin
-            privileges.
-          </p>
-
-          <span className="font-bold text-green-500">*** Q&A Addition:</span>
-          <p className="ml-5">
-            13. A dedicated page lets users add questions and answers to backend
-            storage.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Warehouse & City Addition:
-          </span>
-          <p className="ml-5">
-            14. Users can add warehouses and cities under each warehouse for
-            different countries, used in the shopping app and warehouse
-            management system.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Model & Dimension Addition:
-          </span>
-          <p className="ml-5">
-            15. Allows the addition of model names and specifications for
-            regular and maximum height and width.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Background Image Addition:
-          </span>
-          <p className="ml-5">
-            16. Enables the addition of background images categorized by
-            dimensions, for label creation in the company's product operating
-            application.
-          </p>
-
-          <span className="font-bold text-green-500">*** Icon Addition:</span>
-          <p className="ml-5">
-            17. Allows adding icons, categorized by dimensions, for label
-            creation in the product operating application.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Mall Product Addition:
-          </span>
-          <p className="ml-5">
-            18. Displays comprehensive product information, categorized by model
-            number, with images, videos, and files.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Backend Product Storage:
-          </span>
-          <p className="ml-5">
-            19. Stores product details, categorized by model number, for use in
-            the shopping application.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Event Product Addition:
-          </span>
-          <p className="ml-5">
-            20. Showcases detailed information about event-specific products by
-            model number, with images, videos, and files.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Single-Page Application:
-          </span>
-          <p className="ml-5">
-            21. This website operates as a single-page application.
-          </p>
-
-          <span className="font-bold text-green-500">
-            *** Technologies Used:
-          </span>
-          <p className="ml-5">
-            22. Technologies include HTML, CSS, Tailwind CSS, JavaScript,
-            React.js, Node.js, OpenAI, Express.js, MySQL, and more.
-          </p>
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Customer Service & Communication:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          1. Dedicated platform for the customer service team and admin users.
         </p>
-      </h2>
+        <p className="ml-5">
+          2. Automated customer service system where customers can directly send
+          messages.
+        </p>
+        <p className="ml-5">
+          3. Supports sending images, videos, icons, and files.
+        </p>
+        <p className="ml-5">
+          4. Manual customer service feature allows agents to ask
+          product-related questions and receive stored answers automatically.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Q&A System Integration:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          5. Integrated Question & Answer system for customers.
+        </p>
+        <p className="ml-5">
+          6. All questions and answers are stored in the backend and displayed
+          in the user’s account for analysis.
+        </p>
+        <p className="ml-5">
+          7. Admin can update and add new question–answer data from this panel.
+        </p>
+        <p className="ml-5">
+          8. Customer service agents can search and respond to inquiries about
+          products, shipping, and company services.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Multilingual Customer Support:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          9. Supports customers from Malaysia, China, Vietnam, the Philippines,
+          and other countries.
+        </p>
+        <p className="ml-5">
+          10. Customer questions are automatically translated into Bengali and
+          English.
+        </p>
+        <p className="ml-5">
+          11. Customer service agents respond in the appropriate customer
+          language.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Shop-wise Q&A Management:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">12. Each shop has its own dedicated Q&A section.</p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Unknown Question & Answer Analysis:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          13. Unknown questions and incorrect answers are stored for analysis.
+        </p>
+        <p className="ml-5">14. Admin can review and add missing Q&A data.</p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Admin Dashboard & Analytics:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          15. Admin dashboard displays total app users, web users, Android and
+          iOS users.
+        </p>
+        <p className="ml-5">
+          16. Shows mall products, event products, total registrations, and
+          daily logins.
+        </p>
+        <p className="ml-5">
+          17. Displays device usage by country using bar charts.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Multilanguage Translation System:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          18. Built-in multilingual translation system for global customer
+          support.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Smart Address Detection:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          19. Automatically detects and corrects improper customer address
+          formats.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Customer Service Account Dashboard:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          20. Displays total questions, unknown questions, and activity summary
+          for each customer service agent.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Admin Panel Core Features:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          21. Store and manage all company product information.
+        </p>
+        <p className="ml-5">
+          22. Admin can manage users by editing, deleting, or assigning admin
+          roles.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Data Creation & Management:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          23. Add questions and answers directly into the backend system.
+        </p>
+        <p className="ml-5">
+          24. Add warehouses and cities for different countries for shopping and
+          logistics systems.
+        </p>
+        <p className="ml-5">
+          25. Add product models with PID, CPCL, and ESC modes for Bluetooth and
+          WiFi printers.
+        </p>
+        <p className="ml-5">
+          26. Add product background images by dimension for label design.
+        </p>
+        <p className="ml-5">27. Add icons by dimension for label creation.</p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Mall & Event Product Management:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          28. Add, update, delete, and display mall products with images,
+          videos, and files.
+        </p>
+        <p className="ml-5">
+          29. Add and display event products with full model-based
+          specifications.
+        </p>
+        <p className="ml-5">
+          30. Store product details categorized by model number for the shopping
+          app.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        App Version Control & Permission System:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          31. Manage Grozziie app version updates with access permissions and
+          package control.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Power Bank & Face Attendance Payment Management:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          32. Manage power bank features with voltage-based percentage control.
+        </p>
+        <p className="ml-5">
+          33. Manage attendance system packages with employee limits.
+        </p>
+        <p className="ml-5">
+          34. Control payment-based access for attendance features.
+        </p>
+      </p>
+
+      <h3 className="text-lime-300 mt-4 font-semibold text-xl underline">
+        Contact & Support:-
+      </h3>
+      <p className="text-base font-medium">
+        <p className="ml-5">
+          35. Users can send emails directly through the contact form.
+        </p>
+      </p>
+
       <h2 className="text-white mt-12 font-semibold text-3xl">Technologies:</h2>
       <p>
         {" "}

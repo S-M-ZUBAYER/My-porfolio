@@ -79,25 +79,25 @@ const TaskManagementSystem = () => {
       </h1>
       <h2 className="text-white font-semibold text-3xl">Overview:</h2>
       <p className="my-5">
-        WowoMart Management System is a centralized platform built to manage the
-        seller, shop, and product approval process for the WowoMart e-commerce
-        site (Shopify-based). It ensures a streamlined workflow from shop
-        creation to product listing, account subscription management, and
-        advanced coupon & discount systems for enhanced admin control.
+        The Project & Task Management System is a centralized platform designed
+        to manage projects, tasks, bugs, and employees in a structured and
+        efficient workflow. The system enables real-time project tracking, task
+        assignments, document sharing, bug reporting, and team collaboration
+        with clear approval and review processes by admins, team leaders, and
+        SQA members.
       </p>
 
       <h2 className="text-white font-semibold text-3xl">
         Key Features:
         <p className="text-base font-medium">
           <br />
-          1. Multi-country sellers can apply to create their own shops with
-          payment verification.
+          1. Real-time project dashboard with task status tracking.
           <br />
-          2. Admin-controlled product upload & approval system.
+          2. Detailed project and task management with document support.
           <br />
-          3. Automated seller account expiration & renewal.
+          3. Bug reporting, assignment, and testing workflow.
           <br />
-          4. Coupon & discount management for categories and special customers.
+          4. Employee management with department-wise control.
         </p>
       </h2>
 
@@ -106,38 +106,53 @@ const TaskManagementSystem = () => {
       </h2>
       <p className="text-base font-medium my-5">
         <br />
-        <strong>1. Multi-Country Shop Creation</strong>
-        <br />- Any company can apply to create a shop on WowoMart.
-        <br />- Application includes payment completion through the management
-        system.
-        <br />- Admin reviews and approves shop requests before activation.
+        <strong>1. Dashboard</strong>
+        <br />- Displays all projects with their running tasks.
+        <br />- Tasks are categorized by status: To Do, In Progress, and
+        Completed.
+        <br />- Shows assigned team members for each task.
+        <br />- Admin can delete only the tasks that are in "To Do" status.
         <br />
         <br />
-        <strong>2. Product Upload & Approval</strong>
-        <br />- Once approved, sellers can upload their products.
-        <br />- Admin is notified of new uploads and must verify them.
-        <br />- Verified products are displayed on the WowoMart e-commerce site.
+        <strong>2. Project Management</strong>
+        <br />- Displays a complete list of all projects with main information.
+        <br />- Each project contains multiple tasks with different statuses.
+        <br />- Assigned members can access task resources, discussion
+        documents, and detailed information.
+        <br />- Admin can edit every part of a task and upload required
+        documents such as resource files and discussion notes.
+        <br />- Assigned team members can update task status for admin and team
+        leader review.
+        <br />- SQA and team leaders receive notifications for review and
+        testing.
+        <br />- If approved, tasks are marked as completed; otherwise, issues
+        are reported and reverted to "In Progress" for fixing.
         <br />
         <br />
-        <strong>3. Account Expiration & Renewal</strong>
-        <br />- Seller accounts have a limited active duration.
-        <br />- Expired accounts are automatically deactivated.
-        <br />- Sellers must pay again to renew.
-        <br />- Admin can also manually deactivate seller accounts.
+        <strong>3. Task Management</strong>
+        <br />- Task section displays project-wise tasks in a summarized card
+        format.
+        <br />- Admin and assigned team members can edit tasks.
+        <br />- Admin can delete tasks when necessary.
         <br />
         <br />
-        <strong>4. Coupon Management</strong>
-        <br />- Admins can create coupons for specific categories or products.
-        <br />- Apply special offers for targeted or individual customers.
-        <br />- Full coupon list with details is maintained.
-        <br />- Coupons can be manually deactivated or closed.
+        <strong>4. Bug Management</strong>
+        <br />- Bugs reported by customers or testers are uploaded by admin or
+        team leaders.
+        <br />- Bug reports include issue descriptions, attachments, and project
+        references.
+        <br />- Each bug is assigned to specific team members.
+        <br />- Assigned members receive notifications to resolve the issue.
+        <br />- After fixing, the bug is sent for testing by SQA or team
+        leaders.
         <br />
         <br />
-        <strong>5. Special Customer Discounts</strong>
-        <br />- Maintain a list of special customers eligible for custom
-        discounts.
-        <br />- View discount details for each customer.
-        <br />- Disable individual discounts when needed.
+        <strong>5. Employee Management</strong>
+        <br />- Displays employee list with different category-based color
+        indicators.
+        <br />- Employees can be managed by department.
+        <br />- Admin can edit employee information.
+        <br />- Admin can disable or remove any employee when required.
       </p>
 
       <h2 className="text-white font-semibold text-3xl mt-5 mb-2">

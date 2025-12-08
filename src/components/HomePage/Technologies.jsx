@@ -16,6 +16,7 @@ import Mongoose from "../../assets/Mongoose.png";
 import jwt from "../../assets/jwt.png";
 import nodejs from "../../assets/node.png";
 import redux from "../../assets/ReduxToolkit.png";
+import zustand from "../../assets/zustand.png";
 import bootstrap from "../../assets/bootstrap.png";
 import express from "../../assets/express.png";
 import firebase from "../../assets/firebase.png";
@@ -226,6 +227,12 @@ const Technologies = () => {
       src: redux,
       title: "Redux Toolkit",
       style: "shadow-purple-400",
+    },
+    {
+      id: 26,
+      src: zustand,
+      title: "Zustand",
+      style: "shadow-cyan-400",
     },
     {
       id: 14,

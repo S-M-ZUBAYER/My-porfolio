@@ -6,12 +6,10 @@ import CricketLover from "./components/detailsPages/CricketLover";
 import Experience from "./components/HomePage/Experience";
 import Home from "./components/HomePage/Home";
 import HomePage from "./components/HomePage/HomePage";
-import Kidspace from "./components/detailsPages/Kidspace";
 import Main from "./components/SharedPage/Main";
 import NavBar from "./components/SharedPage/NavBar";
 import Portfolio from "./components/HomePage/Portfolio";
 import SocialLinks from "./components/SharedPage/SocialLinks";
-import StudyZone from "./components/detailsPages/StudyZone";
 import THT_Space from "./components/detailsPages/THT-Space";
 import SchoolManagement from "./components/detailsPages/SchoolManagement";
 import GrozzieeApp from "./components/detailsPages/GrozzieeApp";
@@ -42,16 +40,8 @@ function App() {
           element: <About></About>
         },
         {
-          path: '/kidspace',
-          element: <Kidspace></Kidspace>
-        },
-        {
           path: '/cricketLover',
           element: <CricketLover></CricketLover>
-        },
-        {
-          path: '/studyZone',
-          element: <StudyZone></StudyZone>
         },
         {
           path: '/Customer_Management_System',

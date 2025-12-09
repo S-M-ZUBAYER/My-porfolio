@@ -84,6 +84,8 @@ const NavBar = () => {
 
   const handleLinkClick = (link) => {
     setNav(false); // close mobile drawer
+    console.log(link);
+
     if (location.pathname !== "/") {
       navigate("/");
       setTimeout(() => {

@@ -563,8 +563,24 @@ const AfterSalesManagement = () => {
 
       <h2 className="text-white font-semibold text-3xl">Overview:</h2>
       <p className="my-5">{AfterSalesData.overview}</p>
+
+      <h2 className="text-white mt-12 font-semibold text-3xl">Technologies:</h2>
+      <p>{AfterSalesData.technologies.join(", ")}</p>
+
+      <h2 className="text-white mt-5 font-semibold text-3xl">Links:</h2>
+      {AfterSalesData.links.map((link, i) => (
+        <button
+          key={i}
+          className="flex"
+          onClick={() => handleToLiveLink(link.url)}
+        >
+          <p className="my-3 text-blue-600 font-bold text-lg">
+            {link.label}: <span className="font-medium">{link.url}</span>
+          </p>
+        </button>
+      ))}
       {/* ✅ Key Features */}
-      <h2 className="text-white mt-12 font-semibold text-3xl">Key Features:</h2>
+      <h2 className="text-white mt-5 font-semibold text-3xl">Key Features:</h2>
 
       {AfterSalesData.roles.map((role, i) => (
         <div key={i} className="p-5">
@@ -595,21 +611,7 @@ const AfterSalesManagement = () => {
         </div>
       ))}
 
-      <h2 className="text-white mt-12 font-semibold text-3xl">Technologies:</h2>
-      <p>{AfterSalesData.technologies.join(", ")}</p>
 
-      <h2 className="text-white mt-12 font-semibold text-3xl">Links:</h2>
-      {AfterSalesData.links.map((link, i) => (
-        <button
-          key={i}
-          className="flex"
-          onClick={() => handleToLiveLink(link.url)}
-        >
-          <p className="my-3 text-blue-600 font-bold text-lg">
-            {link.label}: <span className="font-medium">{link.url}</span>
-          </p>
-        </button>
-      ))}
       {AfterSalesData?.account ? (
         <>
           <h2 className="text-white mt-12 font-semibold text-3xl">Account:</h2>

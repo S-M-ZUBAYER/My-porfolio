@@ -84,6 +84,7 @@ management, and advanced coupon & discount systems for enhanced admin control.`,
         "Node.js",
         "ExpressJS",
         "MySQL",
+        "Stripe",
         "Swagger UI"
     ],
 

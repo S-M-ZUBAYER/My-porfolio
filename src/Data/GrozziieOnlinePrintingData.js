@@ -114,10 +114,11 @@ directly through the built-in contact system.`,
         "Tailwind CSS",
         "React.js",
         "Vite",
-        "Redux Toolkit"
-        // "JWT Authentication",
+        "Redux Toolkit",
+        "Node js",
+        "Express js",
         // "Java Spring Boot",
-        // "MySQL"
+        "MySQL"
     ],
 
     links: [

@@ -108,6 +108,7 @@ to ensure smooth printing operations for users.`,
         "Node.js",
         "Express.js",
         "MySQL",
+        "Stripe",
         "REST API",
         "Cloud Storage"
     ],
